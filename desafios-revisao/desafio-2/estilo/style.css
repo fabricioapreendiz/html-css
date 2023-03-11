@@ -50,6 +50,11 @@
 header > h1 {
     font-family: 'Aboreto', cursive;
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.avançado {
+    max-height: 300px;
 }
 
 header {
@@ -73,25 +78,31 @@ header > p {
 }
 
 nav {
-    padding: 10px;
+    border: solid 1px black;
+    padding: 5px;
     background-image: linear-gradient(to right, #41473F, transparent); 
+    border-radius: 15px;
+    max-width: 450px;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 nav > a {
     text-decoration: none;
     color: darkred;
-    padding-right: 20px;
-    padding-left: 15px;
+    padding-right: 40px;
+    padding-left: 30px;
     text-shadow: 3px 1px 6px black;
     border: 4px;
     font-weight: bold;
     transition-duration: 2s;
+    margin: auto;
 }
 
 nav > a:hover {
     text-decoration: underline;
     color: rgb(255, 0, 0);
-    background-color: var(--cor04);
+    background-color: rgba(42, 129, 42, 0.407);
     transition-duration: .5s;
     border-radius: 10px;
 }
