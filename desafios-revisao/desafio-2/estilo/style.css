@@ -42,6 +42,11 @@
     border-radius:  10px;
 }
 
+.pequena > img {
+    width: 50%;
+    margin: auto;
+}
+
 header > h1 {
     font-family: 'Aboreto', cursive;
     text-align: center;
@@ -53,11 +58,13 @@ header {
     padding: 10px;
     max-width: 1000px;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 header > p {
     
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -99,7 +106,7 @@ main {
     box-shadow: 7px -2px 28px 13px black;
     padding: 30px;
     text-align: justify;
-    width: 800px;
+    max-width:  800px;
     margin: auto;
 }
 
@@ -114,11 +121,13 @@ p {
     margin: 15px 0px;
     line-height: 1.5em;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1em;
+    padding: 10px;
 }
 
 main > h2 {
     font-family: 'PermanentMarker-Regular';
+    padding: 10px;
 }
 
 body {
@@ -138,13 +147,26 @@ aside > h2 {
     background-image: linear-gradient(to bottom, #8DD079, #828F7E);
 }
 
+main > aside > a > p {
+    color: rgb(94, 12, 12);
+    text-decoration: none;
+}
+
+main > aside > a > p {
+    text-decoration: none;
+}
+
+main > aside > a:hover > p {
+    color: rgb(244, 52, 52);
+    text-decoration: underline;
+}
+
 div.video {
     background-color: var(--cor03);
     margin-bottom: 15px;
     margin-top: 15px;
     position: relative;
     padding-bottom: 59%;
-
 }
 
 div.video > iframe {
@@ -153,7 +175,6 @@ div.video > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
-
 }
 
 footer {
