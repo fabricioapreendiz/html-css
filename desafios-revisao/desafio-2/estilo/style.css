@@ -160,6 +160,8 @@ footer {
     color: white;
     font-size: 1em;
     background-color: #41473F;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 footer > p {
