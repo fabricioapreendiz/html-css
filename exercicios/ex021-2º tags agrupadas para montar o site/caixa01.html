@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        @font-face {
+            font-family: 'PermanentMarker';
+            src: url('font/PermanentMarker-Regular.ttf') format('truetype');
+        }
+
+        h1 {
+            font-family: 'PermanentMarker';
+            text-align: center;
+            border: groove 7px  green;
+            font-size: 2em;
+            background-color: rgba(255, 127, 80, 0.66);
+            padding: 2px;
+            height: 150px;
+            width: 445px;
+            margin: auto;
+            outline-width: 6px;
+            outline-style: dashed;
+            outline-color: limegreen;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            text-indent: 30px;
+        }
+
+        a {
+            font-family: Arial, Helvetica, sans-serif;
+            border: groove 4px green;
+            background-image: linear-gradient(to left, green, red);
+            color: rgb(182, 104, 255);
+            text-decoration: none;
+            padding: 2px;
+        }
+
+        a:visited {
+            color: rgb(42, 60, 131);
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: yellowgreen;
+        }
+
+        a:active {
+            color: aqua;
+        }
+        
+         a::before {
+            content: ' ➤ ';
+         }
+
+         a::after {
+            content: ' [link]';
+         }
+
+    </style>
+</head>
+<body>
+    <h1>Sobre desenvolvimento Web:</h1>
+    <p>Acesse este <a href="https://www.youtube.com/watch?v=nUrVgr_KAEc">site </a> para saber mais informações de porque escolher web.dev como a principal ferramenta de trabalho inicial, com a opnião de um dev de carreira.</p>
+</body>
+</html>

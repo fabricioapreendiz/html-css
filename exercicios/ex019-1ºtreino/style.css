@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'la casa del cementerio';
+    src: url('fonts/La Casa del Cementerio.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'blood';
+    src: url('fonts/BloodBlocks Project.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DK Face Your Fears';
+    src: url('fonts/DK Face Your Fears.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'bBambooGrove';
+    src: url('bBambooGrove.ttf') format('truetype');
+}
+
+body {
+    background-image: linear-gradient(45deg, rgb(240, 206, 206), darkred);
+    background-attachment: fixed;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'BloodBlocks Project.ttf';
+}
+
+main {
+   background-image: linear-gradient(to top, rgb(247, 149, 149), crimson 90%, white);
+   margin: auto 3%;
+   padding: 3%;
+   border-radius: 1%;
+   text-indent: 40px;
+}
+
+h1 {
+    font-family: 'la casa del cementerio';
+    font-weight: normal;
+    font-size: 3em;
+    text-align: center;
+}
+
+h1#principal {
+    font-family: 'la casa del cementerio';
+    font-size: 3em;
+}
+
+h2 {
+    font-family: 'DK Face Your Fears';
+    font-weight: bolder;
+    color: rgb(147, 12, 12);
+    font-size: 1em;
+}
+
+h2#principal{
+    font-weight: normal;
+    font-family: 'blood';
+    font-size: 2em;
+    color: rgb(131, 9, 9);
+    text-align: center;
+}
+
+.basico {
+    background-color: rgba(0, 0, 0, 0.563);
+    color: rgba(220, 0, 249, 0.983);
+
+}
+
+.intermediario {
+    background-color: rgba(127, 255, 212, 0.414);
+
+}
+
+h3 {
+    font-family: 'DK Face Your Fears';
+    font-size: 16px;
+    color: darkred;
+}
+
+p {
+    font-family: 'DK Face Your Fears';
+    text-align: justify;
+}

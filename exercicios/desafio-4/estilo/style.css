@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'TrashToys02';
+    src: url('../fontes/TrashToys02.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DK American Grunge';
+    src: url('../fontes/DK American Grunge.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PermanentMarker-Regular';
+    src: url('../fontes/PermanentMarker-Regular.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root {
+    --cor01:#706239;
+    --cor02:#FFEDB5;
+    --cor03:#BDAB74;
+    --cor04:#2E3A70;
+    --cor05:#7380BD;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #706239;
+}
+
+article p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 32px;
+    line-height: 2em;
+    font-weight: normal;
+}
+
+main {
+    background-image: linear-gradient(to right,#BDAB74, #FFEDB5, transparent);
+    font-family: 'PermanentMarker-Regular';
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 0px 20px black;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    border-radius: 18px;
+    padding: 20px;
+}
+
+main > article > h2 {
+    font-family: 'DK American Grunge';
+}
+
+main > section > article > h3 {
+    font-family: 'DK American Grunge';
+    font-weight: bolder;
+}
+
+main > aside > h3 {
+    font-family: 'TrashToys02';
+}
+
+img {
+    width: 100%;
+}
+
+.pequena {
+    max-width: 300px;
+}
+
+.intermediario {
+    background-image: linear-gradient(to right, red, transparent);
+}
+
+.avançado {
+    background-image: linear-gradient(to right, darkgreen, transparent);
+}
+
+div.video {
+    background-image: linear-gradient(to left, #706239, #2E3A70) ;
+    margin-bottom: 0px -20px 30px -20px;
+    padding-bottom: 59%;
+
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#principal ::after {
+    content: '\00a0\1F517';
+}
+
+main img.pequena {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav {
+    background-image: linear-gradient(to right, #2E3A70 ,transparent
+     );
+     padding-bottom: 0px;
+     height: 20px;
+}
+
+nav > a {
+    text-decoration: none;
+    font-weight: bolder;
+    box-shadow: 0px 0px 0px black;
+    color: rgb(111, 4, 4);
+    padding: 13px;
+    transition-duration: 1s;
+    
+}
+
+nav > a:hover {
+    color: red;
+    text-decoration: underline;
+    background-image: linear-gradient(to bottom, #2E3A70, #FFEDB5);
+    border-radius: 2px;
+    padding: 2px;
+}
+
+nav > a:active {
+    color: rgba(47, 255, 89, 0.588);
+}
+
+header {
+    background-image: linear-gradient(to right, #7380BD, #FFEDB5);
+    min-height: 150px;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 18px;
+    border-top: 30px;
+    border-radius: 10px;
+}
+
+header img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+header > h1 {
+    font-family: 'TrashToys02';
+}
+
+header > p {
+    font-family: 'PermanentMarker-Regular';
+    background-image: linear-gradient(to right, #FFEDB5, transparent);
+    font-weight: bolder;
+    text-shadow: 0px 10px 20px black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+aside {
+    background-image: linear-gradient(to right, #7380BD, #FFEDB5);
+    padding-bottom: 20px;
+}
+
+aside > h3, ul {
+    color: white;
+    list-style-position: inside;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+aside > ul > li > a {
+    color: darkred;
+    text-decoration: none;
+}
+
+aside > ul li > a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+aside > ul > li a:active {
+    color: #eac34f;
+}
+
+footer {
+    background-color: #7380bd7f;
+}
+
+footer > p {
+    text-align: center;
+    color: white;
+}
+
+footer > p > a {
+    color: darkred;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+footer > p > a:active {
+    color: #eac34f;
+}
+ 

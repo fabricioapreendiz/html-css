@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'HEAVR';
+    src: url('../fontes/HEAVR___.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sketchzone';
+    src: url('../fontes/Sketchzone.otf')format('opentype');
+}
+
+@font-face {
+    font-family: 'BloodBlocks';
+    src: url('../fontes/BloodBlocks Project.ttf')format('truetype');
+}
+
+@font-face {
+   font-family: 'Hard Grunge';
+   src: url('../fontes/Hard Grunge.ttf') format('truetype');
+}
+
+:root {
+    --cor0:#ffff00;
+    --cor1:#872522;
+    --cor2:#4c392b;
+    --cor3:#282222;
+    --cor4:#030406;
+    --cor5:#100404;
+    --cor6:#ff9100;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ body {
+    background-image: linear-gradient(to left, #ffff00ae, #ff9100bf, #87252299);
+ }
+
+ h4 {
+   font-family: 'Hard Grunge';
+   font-size: 5.2em;
+   font-weight: normal;
+   margin-bottom: 20px;
+ }
+
+ header {
+    background-image: linear-gradient(to top, #ff9100, #ffff00, #872522);
+    border-radius: 5px;
+    min-width: 120px;
+    text-align: center;
+    max-width: 840px;
+    margin: auto;
+    margin-bottom: 20px;
+ }
+
+ header > nav {
+    background-color: #100404aa;
+    padding-left: 10px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+ }
+
+ header > nav > a {
+    color: darkred;
+    text-decoration: none;
+    padding-left: 25px;
+    box-shadow: 10px 10px 15px black;
+ }
+
+ header > nav > a:hover {
+    background-image: linear-gradient(to bottom, #49ba14, #872522);
+    border-radius: 10px;
+    color: red;
+    text-decoration: underline;
+    transition-duration: 2s;
+ }
+
+ #principal {
+   background-image: linear-gradient(to right, yellow, transparent);
+ }
+
+ .basico {
+   background-image: linear-gradient(to right, darkred, transparent);
+ }
+
+ .pequena {
+   max-height: 10%;
+   max-width: 800px;
+   margin: auto;
+   display: block;
+ }
+
+ header img.pequena {
+    max-width: 350px;
+    display:block;
+    margin: auto;
+ }
+
+ main {
+    max-width: 800px;
+    min-width: 320px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px black;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+ }
+
+ main img {
+    width: 100%;
+ }
+
+ p {
+   margin: 15px 0px;
+ }
+
+ main p {
+   font-size: 1.5em;
+ }
+
+main strong {
+   color: #ff0000;
+   font-weight: bold;
+   background-color: var(--cor3);
+   border-radius: 10px;
+   padding: 10px;
+}
+
+div.video {
+   background-image: linear-gradient(to right, #ff9100, transparent);
+   margin: 0px -18px 30px -20px;
+   padding: 20px;
+   padding-bottom: 74%;
+   position: relative;
+ }
+
+ div.video > iframe {
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   width: 90%;
+   height: 90%;
+ }
+
+ main > article > p {
+    color: red;
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 30px;
+    padding: 20px;
+ } 
+
+header > section {
+    width: 400px;
+    padding-bottom: 5px;
+}
+
+header > section > p {
+    color: white;
+    font-size: 1em;
+    font-family: 'HEAVR';
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header > section > p > a {
+    text-decoration: none;
+    color: #8a2304;
+    font-size: 2.5em;
+    font-weight: normal;
+    font-family: 'BloodBlocks';
+}
+
+header > section > p > a:hover {
+    color: #ff0000;
+}
+
+header > section > p > a:active {
+    color: rgb(154, 255, 71);
+}
+
+article {
+    background-color: #000000c3;
+ }
+
+ article > h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color:#c5511b;
+    font-family: 'HEAVR';
+    font-weight: normal;
+    font-size: 2em;
+ }
+
+ article > h2 {
+    text-align: center;
+    font-family: 'Sketchzone';
+ }
+
+ aside > ul > li > a {
+   color: #8b005f;
+   font-weight: bolder;
+   text-decoration: none;
+ }
+
+ aside > ul > li > a:hover {
+   text-decoration: underline;
+   color: red;
+ }
+
+ aside > ul > li > a:active {
+   color: #49ba14;
+ }
+
+ aside > ul {
+   list-style-position: inside; /* Não é compatível com todo tipo denavegador*/
+   list-style-type: ' \2714\00a0 ';
+ }
+
+ a.externo::after {
+   content: '\00a0\1F517';
+ }
+
+ aside > ul > li > a::after {
+   content: ' \00a0\1F517';
+ }
+
+ footer {
+    color: white;
+    background-image: linear-gradient(to right, darkblue, transparent);
+    padding: 2px;
+ }
+
+ footer a {
+   text-decoration: none;
+ }
+
+ footer a:hover {
+   color: red;
+   text-decoration: underline;
+ }
+
+ footer a:active {
+   color: yellow;
+ }
+
+ footer > p > a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #8b005f;
+ }
+
+ footer > p > a:hover {
+    color: red;
+    text-decoration: underline;
+ }
+
+ footer > p > a:active {
+    color: #49ba14;
+ }

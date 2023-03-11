@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient( to top, rgb(243, 150, 11), rgb(84, 73, 73));
+    background-attachment: fixed;
+    font-style: italic;
+    font-weight: normal;
+    padding: 4%;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    color: rgb(188, 72, 95);
+}
+
+h1#principal {
+    background-color: darkgoldenrod;
+    text-align: center;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: x-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+    color: darkred;
+    font-size: 30px;
+}

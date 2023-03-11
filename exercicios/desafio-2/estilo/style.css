@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor01: #bbbcd2;
+    --cor02: #b5b6c9;
+    --cor03: #81818f;
+    --cor04: #43434a;
+    --cor05: #141752;
+
+    --font-padrao: arial, verdana, helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor05);
+}
+
+nav {
+    background-image:linear-gradient(to right, var(--cor04), transparent);
+    text-align: center;
+    height: 20px;
+    border: 10px;
+    margin-bottom: 28px;
+    box-shadow: 5px 5px 5px black;
+    font-weight: bold;
+    padding: 5px;
+    padding-right: 5px;
+    border-radius: 15px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+header > nav > abbr > a {
+    text-decoration: none;
+    color: var(--cor05);
+    padding: 5px;
+    padding-right: 15px;
+    transition-duration: .5s;
+    border: 10px;
+}
+
+header > nav > abbr > a:hover {
+    text-decoration: underline;
+    color: red;
+    background-image: linear-gradient(to bottom, #141752, #81818f);
+    border-radius: 5px;
+} 
+
+header > nav > abbr > a:active {
+    color: yellowgreen;
+}
+
+header {
+    background-image: linear-gradient(to left, var(--cor04)), var(--cor02);
+    padding-top: 15px;
+    min-height: 140px;
+}
+
+header > h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+    color: rgb(139, 0, 0);
+    margin-top: 20px;
+    border-top: 10px;
+}
+
+main {
+    background-image: linear-gradient(90deg, #43434a, #b5b6c9, #141752 );
+    padding: 20px;
+    min-width: 320px;
+    max-width: 800px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+main > article > h2 {
+    font-family: 'Press Start 2P';
+    padding-bottom: 16px;
+}
+
+article > ol {
+    list-style-position: inside;
+    columns: 2;
+    line-height: 2em;
+}
+
+section > ol {
+    list-style-position: inside;
+    columns: 2;
+    line-height: 1.5em;
+}
+
+main > section > h2 {
+    font-family: 'Press Start 2P';
+    font-weight: normal;
+    font-size: 1em;
+    padding-top: 40px;
+    padding: 5px;
+    line-height: 1.5em;
+}
+
+.basico {
+    background-color: rgba(255, 255, 0, 0.422);
+    border-radius: 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+main strong {
+    color: darkred;
+    background-color: var(--cor01);
+    padding: 2px;
+}
+
+h2 {
+    font-family: 'Press Start 2P';
+    font-weight: normal;
+    font-size: 1em;
+    background-image: linear-gradient(to bottom, var(--cor02)), var(--cor04);
+}
+
+h3 {
+    font-family: 'Press Start 2P';
+    color: white;
+    margin-bottom: 20px;
+}
+
+nav.intermediario {
+    text-align: left;
+    line-height: 1em;
+}
+
+aside > nav > ul > li > a {
+    color: darkred;
+    text-decoration: none;
+    font-family: 'Press Start 2P';
+    font-weight: normal;
+    font-size: 1em;
+    margin: auto;
+    max-width: 1000px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style-position: inside;
+}
+
+aside > nav > ul > li > a:hover {
+    color: rgb(255, 85, 85);
+    text-decoration: underline;
+}
+
+aside > nav > ul > li > a:active {
+    color: yellow;
+}
+
+#principal {
+    background-image: linear-gradient(to bottom, #141752, #43434a);
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    color: rgba(255, 0, 0, 0.582);
+}
+
+div.video {
+    background-color: var(--cor04);
+    margin-bottom: 15px;
+    margin-top: 15px;
+    position: relative;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer {
+    color: white;
+    padding-top: 50px;
+}
+
+footer > p  {
+    text-align: center;
+   margin-top: 30px;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: darkred;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+footer > p > a:active {
+    color: yellow;
+}
+

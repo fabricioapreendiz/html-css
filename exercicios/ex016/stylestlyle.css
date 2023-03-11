@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+    /*height: 100%;*/
+    font-family:fantasy;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #1A1E26, #323640 3%, #656A73, #979DA6, #B0B7BF);
+    background-attachment: fixed;
+
+}
+
+main {
+    border-radius: 30px;
+    background-color: #B0B7BF;
+    width: 800px;
+    padding: 25px;
+    margin: auto;
+    box-shadow: 10px 10px 15px black;
+}
+
+h1 {
+    color: #1A1E26;
+    background-color: #1a1e2671;
+    text-align: center;
+}
+
+h2 {
+    color: #323640;
+
+}
+
+p {
+    text-align: justify;
+}

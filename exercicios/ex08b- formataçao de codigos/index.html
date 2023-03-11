@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação.</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem Javascript.</p>
+
+    <pre>  <!--A tag "PRE" é para a identação de um código.(deixa no formato de código)-->
+        <code>
+    num = int(imnut('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q></p> <!--a tag "q" é para a colocação de aspas ""-->
+    <h2>Citações completas.</h2>
+    <p>De acordo com Lucas Mazza, no livro HTML5 e CSS3 Domine a Web do futuro:</p>
+    <blockquote  cite="https://www.google.com.br/books/edition/HTML5_e_CSS3/XXCCCwAAQBAJ?hl=pt-BR&gbpv=1&dq=html5+iniciantes&printsec=frontcover">
+    Nos encontramos em uma época revolucionária para o desenvolvimento web. Graças aos avanços da banda larga, diversas empresas do mundo digital impulsionam a evolução das tecnologias que usamos para criar uma web melhor.
+    </blockquote> <!--Parâmetro de referência para que o google identifique determinado texto citado-->
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">Css3</abbr>. É o bixo!</p> <!--A tag "ABBR" mostra o significado de siglas-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Vai tomar no fundo do tóba, sua puta suja!</bdo></p>
+</html> <!--Essa tag "bdo" serve para deixar textos invertidos.-->

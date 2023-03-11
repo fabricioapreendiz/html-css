@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        @font-face {
+            font-family: 'Sketchzone';
+            src: url('font/Sketchzone.otf') format('opentype');
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
+
+        h1 {
+            font-family: 'Sketchzone';
+            background-color: rgba(255, 255, 0, 0.597);
+            color: red;
+            width: 500px;
+            text-align: center;
+            margin: auto;
+            box-shadow: 20px 19px 18px black;
+        }
+
+        h2 {
+            color: red;
+            text-decoration: underline;
+        }
+
+        h3:hover {
+            color: lightgreen;
+            background-color: red;
+            width: 500px;
+        }
+
+        h4 {
+            color: lawngreen;
+            background-color: rgb(255, 34, 0);
+            text-align: right;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: darkgreen;
+            box-shadow: 10px 11px 9px black;
+            color: darkblue;
+            margin-right: 20px;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        a:active {
+            color: lime;
+        }
+
+        body {
+            background-image: linear-gradient(to top, white, green);
+            background-attachment: fixed;
+            font-family: 'East Sea Dokdo', cursive;
+            margin: 0px;
+        }
+
+        header {
+            background-color: darkgray;
+            padding: 2px;
+            margin: 10px;
+            padding: 1px;
+        }
+
+        main {
+            background-color: darksalmon;
+            box-shadow: 10px 12px 10px;
+            text-indent: 30px;
+            margin: auto;
+            padding: 3%;
+            height: 300px;
+            width: 600px;
+            border-radius: 0px 20px;
+        }
+
+        footer {
+            background-color: blue;
+            width: 200px;
+            text-align: center;
+            margin: auto;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 50px;
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tags de agrupamento para a organização de um site: </h1>
+    <hr>
+    <header>
+        <h4>BY Fabricio M Souza</h4>
+        <h2>Meu site.</h2>
+        <h3>Acesse nossos links para mais informações:</h3>
+        <nav>
+            <a href="#">Acesse aqui nosso [link]</a>
+            <a href="#">Acesse aqui nosso [link].</a>
+            <a href="#">Acesse aqui nosso [link].</a>
+            <a href="#">Acesse aqui nosso [link].</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h3>Esportes / Política / Tecnologia.</h3>
+            
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos natus aut officiis similique. Magni minus, cumque nesciunt possimus officiis incidunt, id enim unde sed vitae repellat? Tenetur laboriosam tempore rem?</p>
+                <aside>
+                    <p style="color: darkred; text-decoration: underline;">Artigo escrito por Desconhecido</p>
+                </aside>
+
+            </article>
+
+            <article>
+
+            </article>
+
+
+        </section>
+
+    </main>
+    <footer>
+        <p style="color: tomato; font-size: 10px; text-decoration: underline;">Desenvolvido com o Cursoemvideo</p>
+
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

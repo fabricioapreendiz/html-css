@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com Hover</title>
+    <style>
+        @font-face {
+            font-family: 'DeathtoMetal';
+            src: url('font/DeathtoMetal.ttf') format('truetype');
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: cadetblue;
+        }
+
+        div > p {
+            display: none;
+            color: darkred;
+            font-family: 'DeathtoMetal';
+            font-weight: normal;
+        }
+
+        div:hover > p {
+            display: block;
+            color: rgb(0, 0, 0);
+            background-color: rgba(249, 5, 62, 0.81);
+            width: 150px;
+
+        }
+
+        div:hover {
+            color: rgb(255, 119, 0);
+            width: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Dê uma olhada no que está escondido na gruta.</p>
+    <div>
+        Nossa, vejam só, um elfo Drown!
+        <p>Fujam para as colinas!</p>
+    </div>
+</body>
+</html>

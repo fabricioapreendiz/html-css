@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'PermanentMarker-Regular';
+    src: url('../fontes/PermanentMarker-Regular.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,900&display=swap');
+
+:root {
+    --cor1:#000000;
+    --cor2:#8b000098;
+    --cor3:#8053009d;
+    --cor4:#808080;
+    --cor5:#ffffff;
+    --cor6:#a9a9a9;
+    --cor7:#c5c50af5;
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fote-destaque: 'Source Code Pro', monospace;
+} 
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #c29f9f;
+    background-attachment: fixed;
+}
+
+header  nav {
+    background-image: linear-gradient(to right, --cor7, transparent);
+    min-height: 70px;
+    padding: 0px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin: 0px;
+    text-align: center;
+}
+
+header nav a {
+    margin-right: 20px;
+    color: var(--cor7);
+    background-color: rgba(68, 0, 255, 0.225);
+    border-radius: 8px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    transition-duration: .5s;
+    text-align: center;
+    padding: 8px;
+    margin: auto;
+    box-shadow: 8px 8px 8px black;
+}
+
+header > nav > a:hover {
+    background-color: rgba(205, 76, 50, 0.597);
+    color: rgb(225, 255, 0);
+    text-decoration: underline;
+}
+
+header > nav > a:active {
+    color: rgb(203, 69, 60);
+}
+
+header {
+    background-image: linear-gradient(to right, #8b000078, #80530064);
+    max-width: 1500px;
+    border-radius: 20px;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+    min-height: 150px;
+    text-align: center;
+}
+
+header img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 550px;
+}
+
+h3 {
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+}
+
+header > h1, h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.pequena {
+    width: 60%;
+}
+
+.basico {
+    background-image: linear-gradient(to right, #8b000078, transparent);
+}
+
+header > p {
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background-image: linear-gradient(90deg,#808080, #ffffff, #a9a9a9);
+}
+
+main img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+main > article > P {
+    color: black;
+    text-align: justify;
+    text-indent: 30px;
+    padding: 15px;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+footer {
+    background-image: linear-gradient(to right, rgb(116, 24, 24), transparent);
+}
+
+main > aside {
+    background-image: linear-gradient(to right, #c5c50af5, transparent
+    );
+    list-style-position: inside;
+    padding: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+main > aside > ul > li > a {
+    color: darkred;
+    text-decoration: none;
+}
+
+main > aside > ul > li > a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+main > aside > ul > li > a:active {
+    color: rgb(205, 133, 50);
+}
+
+main > aside > ul > li > a::after {
+    content: ' \00a0\1F517 ';
+} 
+
+div.video {
+    background-image: linear-gradient(to right, rgb(101, 101, 101), transparent);
+    margin: 0px -20px 30px -20px ;
+    padding-bottom: 59%;
+    position: relative;
+}
+    
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 95%;
+    height: 95%;
+}
+
+footer > p {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: darkred;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+    color: red;
+} 
+
+footer > p > a:active {
+    color: orange;
+}

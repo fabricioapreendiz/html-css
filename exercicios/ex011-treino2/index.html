@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágens que se adaptam</title>
+    <h1>Imagens dinâmicas que se adaptam.</h1>
+</head>
+<body>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador. Expanda a imagem abaixo:</p>
+    <picture>
+        <!--Para imagem usa-se o "SRCSET" e "TYPE"-->
+        <source media="(max-width: 800px)" srcset="imagens/foto-g4.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m4.png" type="image/png">
+        <img src="imagens/foto-p4.png" alt="imagem flexível">
+    </picture>
+    <h1>Carregando áudio em html5:</h1>
+    <audio preload="auto" autoplay controls>
+        <!--Para áudio usa-se o "SOURC SRC", seguido do "TYPE"-->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente, você se ferrou, pois o navegador não é compatível com nenhum destes formatos de áudio. Então você pode tentar acessar este link <a href="midia/guanacast-33.mp3">aqui</a>.</p>
+    </audio>
+</body>
+</html>
