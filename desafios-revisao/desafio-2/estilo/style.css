@@ -39,7 +39,7 @@
 .intermediario {
     background-image: linear-gradient(to right, #c3e671c5, transparent);
     text-indent: 15px;
-    border-radius:  10px;
+    border-radius: 10px;
 }
 
 .pequena > img {
@@ -54,7 +54,7 @@ header > h1 {
 }
 
 .avançado {
-    max-height: 300px;
+    max-height: 400px;
 }
 
 header {
@@ -65,6 +65,7 @@ header {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 20px;
+    padding-left: 0px;
 }
 
 header > p {
@@ -90,8 +91,8 @@ nav {
 nav > a {
     text-decoration: none;
     color: darkred;
-    padding-right: 40px;
-    padding-left: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
     text-shadow: 3px 1px 6px black;
     border: 4px;
     font-weight: bold;
@@ -221,7 +222,6 @@ footer > p > a::after {
 
 footer > p > a::before {
     content: '\1F517\00a0';
-
 }
 
 
