@@ -130,7 +130,7 @@ nav > a {
     font-family: 'ANTI-SOC';
     text-decoration: none;
     text-align: center;
-    padding: 15px;
+    padding: 6px;
 }
 
 nav > a:hover {
@@ -173,6 +173,10 @@ main p {
     background-image: linear-gradient(to right, darkgreen, transparent);
 }
 
+h2 {
+    text-align: center;
+}
+
 h3 {
     font-family: 'BloodBlocks';
     color: red;
@@ -200,6 +204,7 @@ article > ol > li {
 
 section > article {
     background-color: #6B5D52;
+    border-radius: 5px;
 }
 
 aside {
