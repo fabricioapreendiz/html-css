@@ -196,7 +196,7 @@ footer {
     font-size: 1em;
     background-color: #41473F;
     margin-top: 20px;
-    margin-bottom: 0px;
+    margin-bottom: -15px;
 }
 
 footer > p {
