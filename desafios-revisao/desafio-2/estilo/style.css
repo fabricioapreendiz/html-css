@@ -63,6 +63,7 @@ header {
     border-radius: 10px;
     border: solid 2px black;
     padding: 10px;
+    padding-bottom: 2px;
     max-width: 1000px;
     margin: auto;
     margin-top: 10px;
@@ -75,6 +76,7 @@ header > p {
     font-size: 1em;
     font-weight: bold;
     color: white;
+    padding: 0px 10px;
     text-align: center;
     text-align: justify;
     margin-bottom: 10px;
