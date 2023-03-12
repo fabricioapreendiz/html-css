@@ -34,6 +34,7 @@
     font-family: 'PermanentMarker-Regular';
     background-color: #41473fb7;
     box-shadow: 10px 10px 10px black;
+    border-radius: 5px;
 }
 
 .intermediario {
@@ -60,6 +61,7 @@ header > h1 {
 header {
     background-image: linear-gradient(to bottom, #8DD079, #828F7E);
     border-radius: 10px;
+    border: solid 2px black;
     padding: 10px;
     max-width: 1000px;
     margin: auto;
