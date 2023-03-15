@@ -32,7 +32,7 @@
     --cor3:#DB5B00;
     --cor4:#6B5D52;
     --cor5:#B34C00;
-    --cor6:darkgreen;
+    --cor6:#006600;
 
     --fonte-padrão: arial, verdana, helvetica, sans-serif;
     --fonte-destque: 'PermanentMarker';
@@ -44,8 +44,8 @@
 }
 
 body {
-    background-image: linear-gradient(to top, #6B5D52, #F5A973);
-    background-attachment: fixed;
+    background-image: linear-gradient(to right, #6B5D52, #B34C00);
+    
 }
 
 header {
