@@ -129,7 +129,7 @@ nav > a:active {
 }
 
 main {
-    background-image: linear-gradient(to right, #9595e5, transparent);
+    background-image: linear-gradient(to right, #b10505cd 67%, transparent);
     padding: 20px;
     margin-bottom: 45px;
     border-bottom-left-radius: 20px;
