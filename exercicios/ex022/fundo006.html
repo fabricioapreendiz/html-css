@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Imagem</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
@@ -13,16 +13,23 @@
             background-position: center center;
             background-repeat: repeat-y;
             background-size: cover;
+            background-attachment: fixed;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 2px solid darkgreen;
             border-radius: 18px;
         }
+
+        /*Shorthand - background
+        color > image > position > repeat > [size]
+        attachment
+        
+        */
 
     </style>
 

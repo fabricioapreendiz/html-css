@@ -52,7 +52,13 @@ h4:hover {
 }
 
 body {
+    height: 100vh;
     background-color: #5b070785;
+    background-image: url('../imagens/wallpaper.jpg');
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-size: cover;
+
 }
 
 header {
