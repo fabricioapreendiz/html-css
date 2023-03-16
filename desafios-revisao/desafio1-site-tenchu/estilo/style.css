@@ -56,7 +56,7 @@ body {
     background-color: #5b070785;
     background-image: url('../imagens/wallpaper-dojo1.jpg');
     background-position: center center;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
