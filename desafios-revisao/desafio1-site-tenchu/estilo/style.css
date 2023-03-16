@@ -54,10 +54,11 @@ h4:hover {
 body {
     height: 100vh;
     background-color: #5b070785;
-    background-image: url('../imagens/wallpaper.jpg');
+    background-image: url('../imagens/wallpaper-dojo1.jpg');
     background-position: center center;
     background-repeat: repeat-y;
     background-size: cover;
+    background-attachment: fixed;
 
 }
 
@@ -128,7 +129,7 @@ nav > a:active {
 }
 
 main {
-    background-color: var(--cor1);
+    background-image: linear-gradient(to right, #9595e5, transparent);
     padding: 20px;
     margin-bottom: 45px;
     border-bottom-left-radius: 20px;
@@ -136,11 +137,16 @@ main {
     box-shadow: 0px 0px 20px black;
     margin: auto;
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 900px;
     text-align: justify;
     text-indent: 33px;
     line-height: 2em;
     list-style-position: inside;
+}
+
+main p {
+    font-weight: bolder;
+
 }
 
 main h1 {
