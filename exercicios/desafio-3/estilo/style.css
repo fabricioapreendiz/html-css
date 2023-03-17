@@ -36,7 +36,12 @@
 }
 
  body {
-    background-image: linear-gradient(to right, #872522, #ffff00);
+   height: 100vh;
+    background-color: #da9203a3;
+    background-image: url('../imagens/rock-wallpaper.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
  }
 
  h4 {
