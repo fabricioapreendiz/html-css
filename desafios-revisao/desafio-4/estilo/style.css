@@ -131,7 +131,7 @@ footer > a:hover {
 }
 
 nav > a {
-    color: rgb(108, 4, 4);
+    color: rgb(11 255 55);;
     font-weight: bold;
     font-family: 'ANTI-SOC';
     text-decoration: none;
@@ -261,11 +261,11 @@ footer > p {
 
 footer > p > a {
     text-decoration: none;
-    color: darkred;
+    color: rgb(9, 5, 244);
 }
 
 footer > p > a:hover {
-    color: red;
+    color: rgb(255, 0, 0);
     text-decoration: underline;
 }
 
