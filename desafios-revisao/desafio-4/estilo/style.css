@@ -77,6 +77,7 @@ main img.pequena {
 
 header > h1 {
     font-family: 'fontes/Shut\'Em\ Down';
+    color: white;
     font-weight: bolder;
     text-align: center;
 }
