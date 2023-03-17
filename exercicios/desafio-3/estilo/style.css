@@ -40,8 +40,9 @@
     background-color: #da9203a3;
     background-image: url('../imagens/rock-wallpaper.jpg');
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
+    background-attachment: scroll;
  }
 
  h4 {
@@ -207,6 +208,7 @@ article {
 
  article > h2 {
     text-align: center;
+    color: red;
     font-family: 'Sketchzone';
     line-height: 2.2em;
  }
