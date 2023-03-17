@@ -44,12 +44,17 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #6B5D52, #B34C00);
-    
+    height: 100vh;
+    background-image: linear-gradient(95deg, black, transparent);
+    background-image: url('../imagens/wallpaper3.jpg');
+    background-position: center center;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header {
-    background-image:linear-gradient(to left, black, rgba(65, 8, 8, 0.813), transparent);
+    background-image:linear-gradient(to left, black, rgba(65, 8, 8, 0.813));
     box-shadow: 0px 0px 30px black;
     min-width: 150px;
     margin-bottom: 10px;
@@ -208,16 +213,18 @@ section > article {
 }
 
 aside {
-    background-color: white;
+    background-image: linear-gradient(to left, #DB5B00, #006600);
     margin-bottom: 15px;
     margin: auto;
     text-align: center;
     border-radius: 15px;
+    border: solid 3px black;
     max-width: 800px;
 }
 
 aside p {
     text-indent: 30px;
+    font-weight: bolder;
     text-align: justify;
     padding: 15px;
     line-height: 2em;
@@ -248,6 +255,7 @@ footer > p {
         color: white;
         font-size: 1em;
         font-weight: bolder;
+        margin-top: 20px;
 }
 
 footer > p > a {
