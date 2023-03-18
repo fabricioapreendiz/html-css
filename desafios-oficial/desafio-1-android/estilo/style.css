@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'bBambooGrove';
+    src: url('../fontes/bBambooGrove.ttf') format('truetype');
+    font-weight: normal;
+}
+
+/*"Responsividade é adaptar o tamanho e conteúdo de um site a tamanho de telas diferentes */
+
+
+/* O "ROOT" é para englobar as cores pricipais do site */
+:root {
+    --cor0:#007052;
+    --cor1:#49F2C5;
+    --cor2:#22705B;
+    --cor3:#00BD8C;
+    --cor4: cadetblue;
+    --cor5: black;
+
+    --fonte-padrão: 'cursive';
+    --fonte-destaque: 'bBambooGrove';
+    --fonte-idroid: 'idroid';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrão);
+}
+
+body a {
+    text-decoration: none;
+    font-weight: bold;
+    color: navy;
+}
+
+body a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+body a:active {
+    color: yellow;
+}
+
+body h3 {
+    background-color: darkgreen;
+    color: red;
+    text-decoration: none;
+    width: 200px;
+    margin: auto;
+   
+}
+
+body h3:hover {
+    text-decoration: underline;
+    background-color: yellow;
+}
+
+a.externo::after {
+    content: '\1F517';
+}
+
+header {
+    background-color: var(--cor3);
+    min-height: 150px;
+    text-align: center;
+    margin-bottom: 35px;
+    padding-top: 20px;
+}
+
+header > h1 {
+    background-image: linear-gradient(to bottom, #49F2C5, 
+    #22705B, #00BD8C);
+    color: black;
+    font-family: var(--fonte-destaque);
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 10px black;
+}
+
+header > p {
+    font-weight: bold;
+    font-size: 1em;
+    max-width: 600px;
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-shadow: 15px 10px 10px black;
+}
+
+nav {
+    background-color: var(--cor1);
+    border: solid 4px black;
+    margin-top: 40px;
+    padding: 6px;
+    box-shadow: 5px 5px 10px black;
+    text-shadow: 5px 5px 10px black;;
+}
+
+nav > a {
+    text-decoration: none;
+    padding: 10px;
+    color: darkred;
+    font-weight: bolder;
+    transition-duration: .5s;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+    color: red;
+    background-color: #f24949b5;
+}
+
+nav > a:active {
+    color: yellow;
+}
+
+main {
+    background-color: cadetblue;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 30px black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+div.video {
+    background-color: var(--cor0);
+    margin: 0px -20px 30px;
+    margin: 0px -20px;
+    position: relative;
+    padding-bottom: 66%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    width: 90%;
+    height: 90%;
+
+}
+
+main h2 {
+    font-family: 'idroid';
+    background-color: var(--cor1);
+    font-size: 1.3em;
+    font-weight: normal;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main strong {
+    color: #49F2C5;
+}
+
+aside {
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px ;
+}
+
+aside h2 {
+    background-color: var(--cor3);
+    color: aliceblue;
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2705\00a0\00a0';  /*"LIST-STYLE-TYPE" não é compativel com todo navegador */
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: var(--cor3);
+    color: aliceblue;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+}
+
+footer a {
+    color: navy;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: yellow;
+} 
+
+footer a:active {
+    color: red;
+}
