@@ -30,31 +30,6 @@ body {
     background-attachment: fixed;
 }
 
-header  nav {
-    background-image: linear-gradient(to right, --cor7, transparent);
-    min-height: 70px;
-    padding: 0px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    margin: 0px;
-    text-align: center;
-}
-
-header nav a {
-    margin-right: 20px;
-    color: var(--cor7);
-    background-color: rgba(68, 0, 255, 0.225);
-    border-radius: 8px;
-    padding-right: 30px;
-    padding-left: 30px;
-    text-decoration: none;
-    transition-duration: .5s;
-    text-align: center;
-    padding: 8px;
-    margin: auto;
-    box-shadow: 8px 8px 8px black;
-}
-
 header > nav > a:hover {
     background-color: rgba(205, 76, 50, 0.597);
     color: rgb(225, 255, 0);
