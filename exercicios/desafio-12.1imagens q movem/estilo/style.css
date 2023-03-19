@@ -31,11 +31,36 @@ section#img001 {
 }
 
 section#img002 {
+    background-image: url('../imagens/GandalftheGrey.png');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img003 {
+    background-image: url('../imagens/automatic-fantasy-gandalf-gray-wallpaper-preview.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img004 {
     background-image: url('../imagens/O-Um.jpg');
     background-position: right center;
     background-size: cover;
-
 }
+
+section#img005 {
+    background-image: url('../imagens/Uruk-fullpistol.jpeg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img006 {
+    background-image: url('');
+    background-position: right center;
+    background-size: cover;
+}
+
+
 
 header > h1 {
     color: bisque;
