@@ -32,7 +32,7 @@ section#img001 {
 
 section#img002 {
     background-image: url('../imagens/GandalftheGrey.png');
-    background-position: center center;
+    background-position: center left;
     background-size: cover;
 }
 
