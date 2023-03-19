@@ -49,7 +49,7 @@ section#img003 {
 }
 
 section#img004 {
-    background-image: url('../imagens/sarumam.jpg');
+    background-image: url('../imagens/Saruman2.jpg');
     background-position: center center;
     background-size: cover;
 }
@@ -160,5 +160,4 @@ footer > p > a:hover {
 footer > p:hover {
     color: red;
     text-decoration: underline;
-    
 }
