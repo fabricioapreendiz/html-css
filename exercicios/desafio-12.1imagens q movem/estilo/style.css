@@ -1,1 +1,99 @@
 @charset "UTF-8";
+
+@font-face {
+    font-family: 'Ancient Medium';
+    src: url('../fontes/Ancient\ Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'tngani';
+    src: url('../fontes/tngani.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'Nightmare';
+    src: url('../fontes/Nightmare\ 5.ttf')format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, darkgreen, green, lightgreen);
+}
+
+header > h1 {
+    color: bisque;
+    text-align: center;
+    font-family: 'Ancient Medium';
+    font-weight: normal;
+    padding-top: 20px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 30px;
+    text-align: center;
+    font-family: 'tngani';
+}
+
+header > p:hover {
+    color: yellow;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 33px;
+}
+
+section.normal {
+    background-color: rgb(176, 105, 39);
+}
+
+section.imagem {
+    background-color: rgb(46, 39, 39);
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.342);
+    width: 400px;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, darkgreen, green, lightgreen);
+}
+
+footer > p {
+    padding: 5px;
+    color: white;
+    text-align: center;
+    font-family: 'Nightmare';
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer > p > a {
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+footer > p:hover {
+    color: red;
+    text-decoration: underline;
+    
+}
