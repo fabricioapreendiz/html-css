@@ -24,6 +24,19 @@ header {
     background-image: linear-gradient(to bottom, darkgreen, green, lightgreen);
 }
 
+section#img001 {
+    background-image: url('../imagens/Gandalf.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img002 {
+    background-image: url('../imagens/O-Um.jpg');
+    background-position: right center;
+    background-size: cover;
+
+}
+
 header > h1 {
     color: bisque;
     text-align: center;
@@ -31,6 +44,7 @@ header > h1 {
     font-weight: normal;
     padding-top: 20px;
     font-variant: small-caps;
+    font-size: 10vw;
 }
 
 header > p {
@@ -54,6 +68,11 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 33px;
+    font-size: 4vw;
+}
+
+section > P {
+    padding-bottom: 1em;
 }
 
 section.normal {
@@ -62,11 +81,15 @@ section.normal {
 
 section.imagem {
     background-color: rgb(46, 39, 39);
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.342);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 2px 2px 0px black;
 }
 
 footer {
