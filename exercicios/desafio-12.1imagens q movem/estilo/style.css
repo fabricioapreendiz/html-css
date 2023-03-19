@@ -55,7 +55,13 @@ section#img005 {
 }
 
 section#img006 {
-    background-image: url('');
+    background-image: url('../imagens/Olho.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img007 {
+    background-image: url('../imagens/Bilbopagasapo.jpg');
     background-position: center center;
     background-size: cover;
 }
