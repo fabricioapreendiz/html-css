@@ -15,6 +15,12 @@
     src: url('../fontes/Nightmare\ 5.ttf')format('truetype');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&display=swap');
+
+:root {
+    --fonte: ;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -104,7 +110,7 @@ section {
     line-height: 2em;
     padding-left: 33px;
     font-size: 3vw;
-    font-family: '';
+    font-family: 'Bigelow Rules', cursive;
 }
 
 section > P {
