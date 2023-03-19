@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: 'tngani';
-    src: url('../fontes/tngani.ttf')format('truetype');
+    font-family: 'tngan';
+    src: url('../fontes/tngan.ttf')format('truetype');
 }
 
 @font-face {
@@ -21,47 +21,53 @@
 }
 
 header {
-    background-image: linear-gradient(to bottom, darkgreen, green, lightgreen);
+    background-color: black;
 }
 
 section#img001 {
-    background-image: url('../imagens/Gandalf.jpg');
+    background-image: url('../imagens/gandalf1.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 section#img002 {
-    background-image: url('../imagens/GandalftheGrey.png');
+    background-image: url('../imagens/gandalf2.jpg');
     background-position: center left;
     background-size: cover;
 }
 
 section#img003 {
-    background-image: url('../imagens/automatic-fantasy-gandalf-gray-wallpaper-preview.jpg');
-    background-position: center center;
+    background-image: url('../imagens/gandalf3.jpg');
+    background-position: top top;
     background-size: cover;
 }
 
 section#img004 {
-    background-image: url('../imagens/O-Um.jpg');
+    background-image: url('../imagens/sarumam.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 section#img005 {
-    background-image: url('../imagens/Uruk-fullpistol.jpeg');
+    background-image: url('../imagens/saruman-grima.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 section#img006 {
-    background-image: url('../imagens/Olho.jpg');
-    background-position: center center;
+    background-image: url('../imagens/Uruks.jpg');
+    background-position: top top;
     background-size: cover;
 }
 
 section#img007 {
-    background-image: url('../imagens/Bilbopagasapo.jpg');
+    background-image: url('../imagens/UmAnel.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img008 {
+    background-image: url('../imagens/Bilbo.jpg');
     background-position: center center;
     background-size: cover;
 }
@@ -79,7 +85,7 @@ header > h1 {
 header > p {
     padding-bottom: 30px;
     text-align: center;
-    font-family: 'tngani';
+    font-family: 'tngan';
 }
 
 header > p:hover {
@@ -97,7 +103,8 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 33px;
-    font-size: 4vw;
+    font-size: 3vw;
+    font-family: '';
 }
 
 section > P {
@@ -105,7 +112,7 @@ section > P {
 }
 
 section.normal {
-    background-color: rgb(176, 105, 39);
+    background-image: linear-gradient(45deg, black, rgb(255, 60, 0), rgb(255, 247, 0))
 }
 
 section.imagem {
