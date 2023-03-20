@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Ancient Medium';
+    src: url('../fontes/Ancient\ Medium.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'PermanentMarker';
+    src: url('../fontes/PermanentMarker-Regular.ttf')format('truetype');
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, black, red, yellow);
+    background-attachment: fixed;
+}
+
+header > p {
+    font-family: 'PermanentMarker';
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding-bottom: 30px;
+}
+
+header {
+    background-image:linear-gradient(to right, red, transparent);
+    text-align: center;
+}
+
+header > h1 {
+    font-family: 'Ancient Medium';
+    font-variant: small-caps;
+    font-size: 2.5em;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+section.normal {
+    background-color: white;
+    color: rgb(86, 84, 84);
+    font-weight: bolder;
+}
+
+section.imagem {
+    background-color: rgb(77, 77, 77);
+    color: white;
+}
+
+section.imagem > P {
+    background-color: rgba(0, 0, 0, 0.275);
+    width: 350px;
+}
+
+section {
+    padding-top: 7vh;  /*CRIA-SE UM ESPAÇO, IMPORTANTE PARA O efeito  */
+    padding-bottom: 7vh;
+    padding-left: 33px;
+    line-height: 2em;   
+}
+
+footer {
+   background-color: black;
+}
+
+footer > p {
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+
+footer > p > a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+    color: red;
+}
