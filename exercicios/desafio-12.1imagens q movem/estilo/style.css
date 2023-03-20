@@ -44,7 +44,7 @@ section#img002 {
 
 section#img003 {
     background-image: url('../imagens/Bilbo2.jpg');
-    background-position: top top;
+    background-position: left top;
     background-size: cover;
 }
 
@@ -74,7 +74,7 @@ section#img007 {
 
 section#img008 {
     background-image: url('../imagens/Bilbo.jpg');
-    background-position: center center;
+    background-position: top top;
     background-size: cover;
 }
 
