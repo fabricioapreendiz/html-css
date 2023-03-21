@@ -31,7 +31,7 @@ header {
 
 header > h1 {
     font-family: var(--fonte1);
-    font-size: 3em;
+    font-size: 8vw;
     color: red;
     text-align: center;
     padding-top: 20px;
@@ -54,11 +54,12 @@ section.normal {
 
 section.imagem {
     background-color: darkgrey;
-    color: white;
+    color: rgb(188, 49, 49);
+    background-attachment: fixed;
 }
 
 section{
-    font-size: 1.5em;
+    font-size: 3vw;
     font-family: var(--fonte2);
     font-weight: bolder;
     padding-left: 33px;
@@ -67,9 +68,104 @@ section{
     line-height: 2em;
 }
 
+section > p {
+    padding-bottom: 1.5em;
+}
+
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.341);
     width: 340px;
+}
+
+section#img01 {
+    background-image: url('../imagem/img01.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagem/img02.jpg');
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+section#img03 {
+    background-image: url('../imagem/img02.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img04 {
+    background-image: url('../imagem/img03.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img05 {
+    background-image: url('../imagem/img04.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img06 {
+    background-image: url('../imagem/img05.jpg');
+    background-position: top center;
+    background-size: cover;
+}
+
+section#img07 {
+    background-image: url('../imagem/img06.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img08 {
+    background-image: url('../imagem/img07.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img09 {
+    background-image: url('');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img10 {
+    background-image: url('');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img11 {
+    background-image: url('');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img12 {
+    background-image: url('');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img13 {
+    background-image: url(''); 
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img14 {
+    background-image: url('');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img15 {
+    background-image: url('');
+    background-position: center center;
+    background-size: cover;
 }
 
 h3 {
@@ -80,8 +176,8 @@ h3 {
 }
 
 footer {
-    font-family: 'Nightmare';
-    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
     background-color: black;
     padding: 5px;
 }
