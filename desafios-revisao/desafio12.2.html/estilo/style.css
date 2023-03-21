@@ -92,14 +92,12 @@ section#img02 {
     background-image: url('../imagens/Inferno-de-Dante.jpg');
     background-position: left right;
     background-size: cover;
-
 }
 
 section#img03 {
     background-image: url('../imagens/lucifer-pecadores-comer-fresco-e.jpg');
     background-position: left center;
     background-size: cover;
-
 }
 
 section.imagem > P {
