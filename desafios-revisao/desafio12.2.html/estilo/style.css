@@ -10,6 +10,18 @@
     src: url('../fontes/PermanentMarker-Regular.ttf')format('truetype');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
+
+@font-face {
+    font-family: 'Nightmare';
+    src: url('../fontes/Nightmare\ 5.ttf')format('truetype');
+}
+
+:root {
+    --fonte1: 'Risque', cursive;
+
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -36,7 +48,7 @@ header {
 header > h1 {
     font-family: 'Ancient Medium';
     font-variant: small-caps;
-    font-size: 2.5em;
+    font-size: 10vw;
     font-weight: normal;
     text-align: center;
     padding-top: 30px;
@@ -44,8 +56,21 @@ header > h1 {
     color: white;
 }
 
+h2 {
+    color: rgb(70, 36, 36);
+    font-family: 'Nightmare';
+    font-size: 5em;
+    text-align: center;
+}
+
+header > h3 {
+    color: white;
+    font-family: 'Nightmare';
+    font-size: 2em;
+}
+
 section.normal {
-    background-color: white;
+    background-color: rgba(237, 39, 39, 0.67);
     color: rgb(86, 84, 84);
     font-weight: bolder;
 }
@@ -53,18 +78,48 @@ section.normal {
 section.imagem {
     background-color: rgb(77, 77, 77);
     color: white;
+    box-shadow: 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url('../imagens/E-aqui-que-o-bagulho.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/Inferno-de-Dante.jpg');
+    background-position: left right;
+    background-size: cover;
+
+}
+
+section#img03 {
+    background-image: url('../imagens/lucifer-pecadores-comer-fresco-e.jpg');
+    background-position: left center;
+    background-size: cover;
+
 }
 
 section.imagem > P {
     background-color: rgba(0, 0, 0, 0.275);
-    width: 350px;
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px opx black;
 }
 
 section {
+    font-size: 3.5vw;
     padding-top: 7vh;  /*CRIA-SE UM ESPAÇO, IMPORTANTE PARA O efeito  */
     padding-bottom: 7vh;
     padding-left: 33px;
     line-height: 2em;   
+    font-family: 'Risque', cursive;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 footer {
