@@ -90,17 +90,10 @@ section#img02 {
     background-image: url('../imagem/img02.jpg');
     background-position: center center;
     background-size: cover;
-    
-}
-
-section#img02 {
-    background-image: url('../imagem/img02.jpg');
-    background-position: center center;
-    background-size: cover;
 }
 
 section#img03 {
-    background-image: url('../imagem/img03.jpg');
+    background-image: url('../imagem/img03\ .jpg');
     background-position: center center;
     background-size: cover;
 }
@@ -113,13 +106,13 @@ section#img04 {
 
 section#img05 {
     background-image: url('../imagem/img05.jpg');
-    background-position: top center;
+    background-position: center center;
     background-size: cover;
 }
 
 section#img06 {
     background-image: url('../imagem/img06.jpg');
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
 }
 
@@ -130,20 +123,26 @@ section#img07 {
 }
 
 section#img08 {
-    background-image: url('../imagem/img13.jpg');
+    background-image: url('../imagem/img08.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img09 {
+    background-image: url('../imagem/img09.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 section#img10 {
-    background-image: url('../imagem/img09th.jpg');
-    background-position: top top;
+    background-image: url('../imagem/img10.jpg');
+    background-position: center center;
     background-size: cover;
 }
 
 section#img11 {
-    background-image: url('../imagem/img10.jpg');
-    background-position: center center;
+    background-image: url('../imagem/img11.jpg');
+    background-position: top top;
     background-size: cover;
 }
 
@@ -154,19 +153,19 @@ section#img12 {
 }
 
 section#img13 {
-    background-image: url('../imagem/img13.jp'); 
+    background-image: url('../imagem/img13.jpg'); 
     background-position: center center;
     background-size: cover;
 }
 
 section#img14 {
-    background-image: url('../imagem/img12.jpg');
-    background-position: center center;
+    background-image: url('../imagem/img14\ -\ Copia.jpg');
+    background-position: bottom bottom;
     background-size: cover;
 }
 
 section#img15 {
-    background-image: url('../imagem/img12.jpg');
+    background-image: url('../imagem/img15.jpg');
     background-position: center center;
     background-size: cover;
 }
