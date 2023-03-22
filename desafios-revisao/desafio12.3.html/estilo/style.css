@@ -136,37 +136,37 @@ section#img08 {
 }
 
 section#img10 {
-    background-image: url('');
-    background-position: center center;
+    background-image: url('../imagem/img09th.jpg');
+    background-position: top top;
     background-size: cover;
 }
 
 section#img11 {
-    background-image: url('');
+    background-image: url('../imagem/img10.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 section#img12 {
-    background-image: url('');
+    background-image: url('../imagem/img12.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 section#img13 {
-    background-image: url(''); 
+    background-image: url('../imagem/img13.jp'); 
     background-position: center center;
     background-size: cover;
 }
 
 section#img14 {
-    background-image: url('');
+    background-image: url('../imagem/img12.jpg');
     background-position: center center;
     background-size: cover;
 }
 
 section#img15 {
-    background-image: url('');
+    background-image: url('../imagem/img12.jpg');
     background-position: center center;
     background-size: cover;
 }
