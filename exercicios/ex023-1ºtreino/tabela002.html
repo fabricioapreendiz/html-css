@@ -10,9 +10,23 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
+        /*
+        :nth-child(odd) ou (even)  ímpar ou par para lista emzebrada
+        ou, também, (n2), (n3)....duas em duas, três em três
+        */
+
+        body tr:nth-child(even) {
+            background-color:  rgba(119, 136, 153, 0.712);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
+            margin: auto;
         }
 
         td,th {
@@ -20,8 +34,8 @@
             padding: 7px;
         }
         thead, tfoot {
-            background-color: lightslategray;
-            color: rgb(5, 237, 71);
+            background-color: rgba(119, 136, 153, 0.812);
+            color: rgb(12, 149, 51);
             font-size: 1.5em;
             text-decoration: underline;
         }
