@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela grande com efeito zebrado</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgba(103, 213, 167, 0.494);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            border: 3px solid black;
+            margin: auto;
+            position: relative;
+        }
+
+        caption {
+            font-size: 2em;
+            font-weight: bolder;
+            color: white;
+            background-color: rgb(0, 0, 0);
+        }
+
+        td,th {
+            border: 2px solid black;
+            padding: 8px;
+            font-weight: bolder;
+        }
+
+         /*   Outras opções para usar no tr:ntc-child() :
+              odd, even, 2n-1
+         */
+        tbody > tr:nth-child(2n) {
+            background-color: rgba(253, 72, 72, 0.724);
+        }
+
+        thead, tfoot {
+            background-color: tomato;
+            position: sticky;
+            top: -1px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Treino com tabelas grandes</h1>
+    <!--Anatomia de uma tabela grande
+    
+        TABLE
+          THEAD
+            tr, td, th
+
+             TBODY
+               tr, td, th
+
+               TFOOT
+                 tr, td, th
+    -->
+    <table>
+        <caption>Os 100 melhores livros de fantasia segundo a revista Time</caption>
+        <thead>
+                <tr>
+                    <th scope="col">Livro</th>
+                    <th scope="col">Autor(a)</th>
+                </tr>
+        </thead>
+
+            <tbody>
+                <tr>
+                    <td>As mil e uma noites</td>
+                    <td>(Livro escrito por mulher ou por um Gado mangina Escravoceta)</td>
+                </tr>
+
+                <tr>
+                    <td>A morte de Arthur </td>
+                    <td>(Thomas Malory)</td>
+                </tr>
+
+                <tr>
+                    <td>Alice no país das maravilhas </td>
+                    <td>(Lewis Carroll)</td>
+                </tr>
+
+                <tr>
+                    <td>Alice através do espelho </td>
+                    <td>(Lewis Carroll)</td>
+                </tr>
+
+                <tr>
+                    <td>Quatro crianças e um segredo</td>
+                    <td>(Edith Nesbit)</td>
+                </tr>
+
+                <tr>
+                    <td>Ozma de Oz, parte do mundo de O mágico de Oz</td>
+                    <td>(L. Frank Baum)</td>
+                </tr>
+
+                <tr>
+                    <td>Mary Poppins </td>
+                    <td>(P. L. Travers)</td>
+                </tr>
+
+                <tr>
+                    <td>O leão, a feiticeira e o guarda-roupa,  primeiro livro da saga As crônicas de Nárnia</td>
+                    <td>(C. S. Lewis)</td>
+                </tr>
+
+                <tr>
+                    <td>O bebedor de palma de vinho</td>
+                    <td>(Amos Tutuola)</td>
+                </tr>
+
+                <tr>
+                    <td>A viagem do peregrino do alvorada, erceiro livro da saga As crônicas de Nárnia</td>
+                    <td>(C. S. Lewis)</td>
+                </tr>
+
+                <tr>
+                    <td>A Sociedade do Anel, primeiro livro da saga O Senhor dos Anéis</td>
+                    <td>(J. R. R. Tolkien)</td>
+                </tr>
+
+                <tr>
+                    <td>Minha vida no arbusto dos fantasmas</td>
+                    <td>(Amos Tutuola)</td>
+                </tr>
+
+                <tr>
+                    <td>As duas torres, segundo livro da saga O Senhor dos Anéis </td>
+                    <td>(J. R. R. Tolkien)</td>
+                </tr>
+
+                <tr>
+                    <td>O retorno do rei, terceiro livro da saga O Senhor dos Anéis</td>
+                    <td> (J. R. R. Tolkien)</td>
+                </tr>
+
+                <tr>
+                    <td>Um herói nascido</td>
+                    <td>(Jin Yong)</td>
+                </tr>
+
+                <tr>
+                    <td>O único e eterno rei </td>
+                    <td>(Roald Dahl)</td>
+                </tr>
+
+                <tr>
+                    <td>Tudo depende de como você vê as coisas</td>
+                    <td>(Norton Juster)</td>
+                </tr>
+
+                <tr>
+                    <td>Uma dobra no tempo, primeiro livro da saga Uma dobra no tempo</td>
+                    <td>(Madeleine L’engle)</td>
+                </tr>
+
+                <tr>
+                    <td>O unicórnio</td>
+                    <td> (Manuel Mujica Lainez)</td>
+                </tr>
+
+                <tr>
+                    <td>O voo do dragão </td>
+                    <td>(Anne McCaffrey)</td>
+                </tr>
+
+                <tr>
+                    <td>O último unicórnio</td>
+                    <td>(Peter Beagle)</td>
+                </tr>
+
+                <tr>
+                    <td>O feiticeiro de Terramar, primeiro livro da saga Ciclo Terramar</td>
+                    <td>(Ursula K. Le Guin)</td>
+                </tr>
+
+                <tr>
+                    <td>A caverna de cristal </td>
+                    <td>(Mary Stewart)</td>
+                </tr>
+
+                <tr>
+                    <td>As tumbas de Atuan, segundo livro da saga Ciclo Terramar</td>
+                    <td> (Ursula K. Le Guin)</td>
+                </tr>
+
+                <tr>
+                    <td>Em busca de Watership Down </td>
+                    <td>(Richard Adams)</td>
+                </tr>
+
+                <tr>
+                    <td>A rebelião das trevas </td>
+                    <td>(Susan Cooper)</td>
+                </tr>
+
+                <tr>
+                    <td>A princesa prometida</td>
+                    <td> (William Goldman)</td>
+                </tr>
+
+                <tr>
+                    <td>A fonte secreta </td>
+                    <td>(Natalie Babbitt)</td>
+                </tr>
+
+                <tr>
+                    <td>Um planeta em seu giro veloz , terceiro livro da saga Uma dobra no tempo</td>
+                    <td>(Madeleine L’engle)</td>
+                </tr>
+
+                <tr>
+                    <td>A câmara sangrenta </td>
+                    <td>(Angela Carter)</td>
+                </tr>
+
+                <tr>
+                    <td>O bom gigante amigo </td>
+                    <td>(Roald Dahl)</td>
+                </tr>
+
+                <tr>
+                    <td>A canção de Alanna </td>
+                    <td>(Tamora Pierce)</td>
+                </tr>
+
+                <tr>
+                    <td>O castelo animado O castelo animado</td>
+                    <td>(Diana Wynne Jones)</td>
+                </tr>
+
+                <tr>
+                    <td>Redwall</td>
+                    <td> (Brian Jacques)</td>
+                </tr>
+
+                <tr>
+                    <td>Swordspoint</td>
+                    <td>(Ellen Kushner)</td>
+                </tr>
+
+                <tr>
+                    <td>As vidas de Christopher Chant </td>
+                    <td>(Diana Wynne Jones)</td>
+                </tr>
+
+                <tr>
+                    <td>O olho do mundo (Robert Jordan)</td>
+                    <td>(Robert Jordan)</td>
+                </tr>
+
+                <tr>
+                    <td>Good Omens: Belas maldições </td>
+                    <td>(Neil Gaiman e Terry Pratchett)</td>
+                </tr>
+
+                <tr>
+                    <td>Haroun e o mar de histórias </td>
+                    <td>(Salman Rushdie)</td>
+                </tr>
+
+                <tr>
+                    <td>Outlander: A viajante do tempo </td>
+                    <td>(Diana Gabalton)</td>
+                </tr>
+
+                <tr>
+                    <td>Tigana: A lâmina da alma </td>
+                    <td>(Guy Gavriel Kay)</td>
+                </tr>
+
+                <tr>
+                    <td>A bússola de ouro </td>
+                    <td>(Philip Pullman)</td>
+                </tr>
+
+                <tr>
+                    <td>Lugar nenhum </td>
+                    <td>(Neil Gaiman)</td>
+                </tr>
+
+                <tr>
+                    <td>Ella encantada</td>
+                    <td> (Gail Carson Levine)</td>
+                </tr>
+
+                <tr>
+                    <td>A faca sutil </td>
+                    <td>(Philip Pullman)</td>
+                </tr>
+
+                <tr>
+                    <td>Brown Girl in the Ring </td>
+                    <td>(Nalo Hopkinson)</td>
+                </tr>
+
+                <tr>
+                    <td>Harry Potter e o prisioneiro de Azkaban , terceiro livro da saga Harry Potter</td>
+                    <td>(J. K. Rowling)</td>
+                </tr>
+
+                <tr>
+                    <td>Spindle’s End </td>
+                    <td>(Robin McKinley)</td>
+                </tr>
+
+                <tr>
+                    <td>A tormenta de espadas , terceiro livro da saga As crônicas de gelo e fogo</td>
+                    <td>(George. R. R. Martin)</td>
+                </tr>
+    
+            
+                <tr>
+                    <td>Alice no país das maravilhas </td>
+                    <td>(Lewis Carroll)</td>
+                </tr>
+
+                <tr>
+                    <td>Alice através do espelho</td>
+                    <td>(Lewis Carroll)</td>
+                </tr>
+
+                <tr>
+                    <td>Quatro crianças e um segredo </td>
+                    <td>(Edith Nesbit)</td>
+                </tr>
+
+                <tr>
+                    <td>Ozma de Oz , parte do mundo de O mágico de Oz</td>
+                    <td>(L. Frank Baum)</td>
+                </tr>
+
+                <tr>
+                    <td>Mary Poppins </td>
+                    <td>(P. L. Travers)</td>
+                </tr>
+
+                <tr>
+                    <td>O leão, a feiticeira e o guarda-roupa , primeiro livro da saga As crônicas de Nárnia</td>
+                    <td>(C. S. Lewis)</td>
+                </tr>
+
+                <tr>
+                    <td>O bebedor de palma de vinho </td>
+                    <td>(Amos Tutuola)</td>
+                </tr>
+
+                <tr>
+                    <td>A viagem do peregrino do alvorada , terceiro livro da saga As crônicas de Nárnia</td>
+                    <td>(C. S. Lewis)</td>
+                </tr>
+
+                <tr>
+                    <td>A Sociedade do Anel , primeiro livro da saga O Senhor dos Anéis</td>
+                    <td>(J. R. R. Tolkien)</td>
+                </tr>
+
+                <tr>
+                    <td>Minha vida no arbusto dos fantasmas </td>
+                    <td>(Amos Tutuola)</td>
+                </tr>
+
+                <tr>
+                    <td>As duas torres , segundo livro da saga O Senhor dos Anéis</td>
+                    <td>(J. R. R. Tolkien)</td>
+                </tr>
+
+                <tr>
+                    <td>O retorno do rei , terceiro livro da saga O Senhor dos Anéis</td>
+                    <td>(J. R. R. Tolkien)</td>
+                </tr>
+
+                <tr>
+                    <td>Um herói nascido </td>
+                    <td>(Jin Yong)</td>
+                </tr>
+
+                <tr>
+                    <td>O único e eterno rei </td>
+                    <td>(T. H. White)</td>
+                </tr>
+
+                <tr>
+                    <td>James e o pêssego gigante </td>
+                    <td>(Roald Dahl)</td>
+                </tr>
+                <tr>
+                    <td>Tudo depende de como você vê as coisas </td>
+                    <td>(Norton Juster)</td>
+                </tr>
+
+                <tr>
+                    <td>Uma dobra no tempo , primeiro livro da saga Uma dobra no tempo</td>
+                    <td>(Madeleine L’engle)</td>
+                </tr>
+
+                <tr>
+                    <td>O unicórnio </td>
+                    <td>(Manuel Mujica Lainez)</td>
+                </tr>
+
+                <tr>
+                    <td>O voo do dragão </td>
+                    <td>(Anne McCaffrey)</td>
+                </tr>
+
+                <tr>
+                    <td>O último unicórnio </td>
+                    <td>(Peter Beagle)</td>
+                </tr>
+
+                <tr>
+                    <td>O feiticeiro de Terramar , primeiro livro da saga Ciclo Terramar</td>
+                    <td>(Ursula K. Le Guin)</td>
+                </tr>
+
+                <tr>
+                    <td>A caverna de cristal</td>
+                    <td> (Mary Stewart)</td>
+                </tr>
+
+                <tr>
+                    <td>As tumbas de Atuan , segundo livro da saga Ciclo Terramar</td>
+                    <td>(Ursula K. Le Guin)</td>
+                </tr>
+
+                <tr>
+                    <td>Em busca de Watership Down </td>
+                    <td>(Richard Adams)</td>
+                </tr>
+                <tr>
+                    <td>A rebelião das trevas </td>
+                    <td>(Susan Cooper)</td>
+                </tr>
+
+
+                <tr>
+                    <td>A princesa prometida </td>
+                    <td>(William Goldman)</td>
+                </tr>
+
+
+                <tr>
+                    <td>A fonte secreta </td>
+                    <td>(Natalie Babbitt)</td>
+                </tr>
+
+
+                <tr>
+                    <td>Um planeta em seu giro veloz , terceiro livro da saga Uma dobra no tempo</td>
+                    <td>(Madeleine L’engle)</td>
+                </tr>
+
+
+                <tr>
+                    <td>A câmara sangrenta</td>
+                    <td> (Angela Carter)</td>
+                </tr>
+
+
+                <tr>
+                    <td>O bom gigante amigo </td>
+                    <td>(Roald Dahl)</td>
+                </tr>
+
+
+                <tr>
+                    <td>A canção de Alanna </td>
+                    <td>(Tamora Pierce)</td>
+                </tr>
+
+
+                <tr>
+                    <td>O castelo animado </td>
+                    <td>(Diana Wynne Jones)</td>
+                </tr>
+
+
+                <tr>
+                    <td>Redwall </td>
+                    <td>(Brian Jacques)</td>
+                </tr>
+
+
+                <tr>
+                    <td>Swordspoint </td>
+                    <td>(Ellen Kushner)</td>
+                </tr>
+
+
+                <tr>
+                    <td>As vidas de Christopher Chant </td>
+                    <td>(Diana Wynne Jones)</td>
+                </tr>
+
+
+                <tr>
+                    <td>O olho do mundo </td>
+                    <td>(Robert Jordan)</td>
+                </tr>
+
+
+                <tr>
+                    <td>Good Omens: Belas maldições </td>
+                    <td>(Neil Gaiman e Terry Pratchett)</td>
+                </tr>
+
+
+                <tr>
+                    <td>Haroun e o mar de histórias </td>
+                    <td>(Salman Rushdie)</td>
+                </tr>
+
+
+                <tr>
+                    <td>Outlander: A viajante do tempo </td>
+                    <td>(Diana Gabalton)</td>
+                </tr>
+
+
+            <tr>
+                <td>Tigana: A lâmina da alma </td>
+                <td>(Guy Gavriel Kay)</td>
+            </tr>
+
+                <tr>
+                    <td>A bússola de ouro</td>
+                    <td> (Philip Pullman)</td>
+                </tr>
+
+
+                <tr>
+                    <td>Lugar nenhum </td>
+                    <td>(Neil Gaiman)</td>
+                </tr>
+
+
+                <tr>
+                    <td>Ella encantada </td>
+                    <td>(Gail Carson Levine)</td>
+                </tr>
+
+
+                <tr>
+                    <td>A faca sutil </td>
+                    <td>(Philip Pullman)</td>
+                </tr>
+
+                <tr>
+                    <td>Brown Girl in the Ring </td>
+                    <td>(Nalo Hopkinson)</td>
+                </tr>
+
+                <tr>
+                    <td>Harry Potter e o prisioneiro de Azkaban , terceiro livro da saga Harry Potter</td>
+                    <td>(J. K. Rowling)</td>
+                </tr>
+
+                <tr>
+                    <td> Spindle’s End </td>
+                    <td>(Robin McKinley)</td>
+                </tr>
+
+                <tr>
+                    <td>A tormenta de espadas , terceiro livro da saga As crônicas de gelo e fogo</td>
+                    <td>(George. R. R. Martin)</td>
+                </tr>
+
+                <tr>
+                    <td>Deuses americanos </td>
+                    <td>(Neil Gaiman)</td>
+                </tr>
+
+                <tr>
+                    <td>Os pequenos homens livres </td>
+                    <td>(Terry Pratchett)</tr>
+                </tr>
+                
+                <tr>
+                    <td>Harry Potter e o enigma do príncipe , sexto livro da saga Harry Potter</td>
+                    <td>(J. K. Rowling)</td>
+                </tr>
+
+                <tr>
+                    <td>Mistborn</td>
+                    <td>(Brandon Sanderson)</td>
+                </tr>
+
+                <tr>
+                    <td>O nome do vento </td>
+                    <td>(Patrick Rothfuss)</td>
+                </tr>
+
+                <tr>
+                    <td>Cidade de vidro </td>
+                    <td>(Cassandra Clare)</td>
+                </tr>
+
+                <tr>
+                    <td>Onde a montanha encontra a lua</td>
+                    <td>(Grace Lin)</td>
+                </tr>
+                <tr>
+                    <td>Os cem mil reinos </td>
+                    <td>(N. K Jemisin)</td>
+                </tr>
+                <tr>
+                    <td>Quem teme a morte </td>
+                    <td>(Nnedi Okorafor)</td>
+                </tr>
+                <tr>
+                    <td>Bruxa Akata </td>
+                    <td>(Nnedi Okorafor)</td>
+                </tr>
+                <tr>
+                    <td>O circo da noite </td>
+                    <td>(Erin Morgenstern)</td>
+                </tr>
+                <tr>
+                    <td>A canção de Aquiles </td>
+                    <td>(Madeline Miller)</td>
+                </tr>
+                <tr>
+                    <td>A queda dos anjos</td>
+                    <td> (Susan Ee)</td>
+                </tr>
+                <tr>
+                    <td>Um estranho em Olondria </td>
+                    <td>(Sofia Samatar)</td>
+                </tr>
+                <tr>
+                    <td>Os relógios de ossos </td>
+                    <td>(David Mitchell)</td>
+                </tr>
+
+                <tr>
+                    <td>O gigante enterrado</td>
+                    <td>(Kazuo Ishiguro)</td>
+                </tr>
+
+                <tr>
+                    <td>Uma chama entre as cinzas </td>
+                    <td>(Sabaa Tahir)</td>
+                </tr>
+
+                <tr>
+                    <td>A quinta estação </td>
+                    <td> (Daniel José Older )</td>
+                </tr>
+
+                <tr>
+                    <td>Meta-se em encrenca (Kelly Link)</td>
+                    <td>(Leigh Bardugo)</td>
+                </tr>
+                <tr>
+                    <td>A graça dos reis (Ken Liu)</td>
+                    <td>(Renée Ahdieh)</td>
+                </tr>
+                <tr>
+                    <td>Manipuladores de sombras </td>
+                    <td>(Daniel José Older)</td>
+                </tr>
+
+                <tr>
+                    <td>Six of crows: Sangue e mentiras </td>
+                    <td> (Leigh Bardugo)</td>
+                </tr>
+
+                <tr>
+                    <td>A fúria e a aurora </td>
+                    <td>(N. K. Jemisin)</td>
+                </tr>
+
+                <tr>
+                    <td>Todos os pássaros no céu </td>
+                    <td>(Charlie Jane Anders)</td>
+                </tr>
+
+                <tr>
+                    <td>Uma tocha na escuridão </td>
+                    <td>(Sabaa Tahir)</td>
+                </tr>
+
+                <tr>
+                    <td>Um muro de tormentas </td>
+                    <td>(Ken Liu)</td>
+                </tr>
+
+                <tr>
+                    <td>Feras da noite </td>
+                    <td>(Tochi Onyebuchi)</td>
+                </tr>
+                <tr>
+                    <td>As marés negras do paraíso </td>
+                    <td>(Neon Yang)</td>
+                </tr>
+
+                <tr>
+                    <td>Changeling: sombras de Nova York </td>
+                    <td>(Victor Lavalle)</td>
+                </tr>
+
+                <tr>
+                    <td>Jade City </td>
+                    <td>(Fonda Lee)</td>
+                </tr>
+
+                <tr>
+                    <td>O céu de pedra </td>
+                    <td>(N. K. Jemisin)</td>
+                </tr>
+
+                <tr>
+                    <td>Aru Shah e o fim dos tempos </td>
+                    <td>(Roshani Chokshi)</td>
+                </tr>
+
+                <tr>
+                    <td>Blanca y roja</td>
+                    <td>(Anna-Marie McLemore)</td>
+                </tr>
+
+                <tr>
+                    <td>Filhos de sangue e osso </td>
+                    <td>(Tomi Adeyemi)</td>
+                </tr>
+                <tr>
+                    <td>Circe </td>
+                    <td>(Madeline Miller)</td>
+                </tr>
+
+                <tr>
+                    <td>Império de areia </td>
+                    <td>(Tasha Suri)</td>
+                </tr>
+                <tr>
+                    <td>The Poppy War</td>
+                    <td> (R. F. Kuang)</td>
+                </tr>
+
+                <tr>
+                    <td>Song of Blood and Stone </td>
+                    <td>(L. Penelope)</td>
+                </tr>
+                <tr>
+                    <td>Trail of Lightning </td>
+                    <td>(Rebecca Roanhorse)</td>
+                </tr>
+                <tr>
+                    <td>Witchmark </td>
+                    <td>(C. L. Polk)</td>
+                </tr>
+                <tr>
+                    <td>Leopardo Negro, Lobo Vermelho </td>
+                    <td>(Marlon James)</td>
+                </tr>
+                <tr>
+                    <td>Filhos de virtude e vingança </td>
+                    <td>(Tomi Adeyemi)</td>
+                </tr>
+                <tr>
+                    <td>A república do dragão </td>
+                    <td>(R. F. Kuang)</td>
+                </tr>
+                <tr>
+                    <td>Gods of Jade and Shadow </td>
+                    <td>(Silvia Moreno-Garcia)</td>
+                </tr>
+                <tr>
+                    <td>Pet </td>
+                    <td>(Akwaeke Emezi)</td>
+                </tr>
+                <tr>
+                    <td>Queen of the conquered </td>
+                    <td>(Kacen Callender)</td>
+                </tr>
+
+                <tr>
+                    <td>The Rage of Dragons </td>
+                    <td>(Evan Winter)</td>
+                </tr>
+
+                <tr>
+                    <td>We Hunt the Flame </td>
+                    <td>(Hafsah Faizal)</td>
+                </tr>
+
+                <tr>
+                    <td>Elatsoe </td>
+                    <td>(Darcie Little Badger)</td>
+                </tr>
+
+                <tr>
+                    <td>Woven in Moonlight </td>
+                    <td>(Isabel Ibañez)</td>
+                </tr>
+            </tbody>
+           
+        <tfoot>
+            <tr>
+                <th>100 títulos</th>
+            </tr>
+
+        </tfoot>
+    </table>
+
+
+</body>
+</html>
