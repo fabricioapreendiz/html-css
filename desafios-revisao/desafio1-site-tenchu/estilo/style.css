@@ -59,7 +59,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
 }
 
 header {
@@ -129,7 +128,7 @@ nav > a:active {
 }
 
 main {
-    background-image: linear-gradient(to right, #b10505cd 67%, transparent);
+   background-color: var(--cor5);
     padding: 20px;
     margin-bottom: 45px;
     border-bottom-left-radius: 20px;
@@ -146,6 +145,7 @@ main {
 
 main p {
     font-weight: bolder;
+    color: white;
 
 }
 
