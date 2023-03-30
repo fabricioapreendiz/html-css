@@ -66,7 +66,7 @@ header {
     min-height: 150px;
     text-align: center;
     padding-top: 40px;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     margin-bottom: 20px;
 }
@@ -74,7 +74,7 @@ header {
 header > p {
     font-family: var(--fonte-destaque);
     font-size: 3em;
-    max-width: 600px;
+    max-width: 900px;
     margin-bottom: 20px;
     padding-right: 15px;
     padding-left: 15px;
@@ -94,7 +94,7 @@ nav {
 header > h1 {
     font-family: 'bBambooGrove';
     background-color: #43434a;
-    color: darkred;
+    color: rgb(0, 139, 19);
     font-size: 2em;
     text-decoration: underline;
     margin-top: 30px;
@@ -103,11 +103,13 @@ header > h1 {
     margin: auto;
     text-align: center;
     text-shadow:6px 7px 2px black;
+    max-width: 500px;
 }
 
-header img {
+body > header > img {
     display: block;
     margin: auto;
+    max-width: 800px;
 }
 
 nav > a {
@@ -234,8 +236,8 @@ aside > p > a:active {
 
 aside > ul > h2 {
     background-color: rgba(74, 50, 231, 0.471);
-    border-radius: 10px 10px 0px 0px;
-    width: 359px;
+    border-radius: 10px;
+    max-width: 800px;
 }
 
 aside > ul {
