@@ -26,7 +26,13 @@
 }
 
 body {
-    background-color: #1546f799;
+    background-image: linear-gradient(to right, var(--cor3) 73%, var(--cor2));
+    height: 100vp;
+    background-image: url('../imagens/wallpaper.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
    
 }
 
@@ -99,7 +105,7 @@ main {
     margin-bottom: 30px;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
-    background-image: linear-gradient(90deg,#808080, #ffffff, #a9a9a9);
+    background-image: linear-gradient(90deg, var(--cor4), var(--cor5), var(--cor6));
 }
 
 main img {
