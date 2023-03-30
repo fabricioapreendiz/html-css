@@ -27,6 +27,12 @@
 
 body {
     background-image: linear-gradient(to top, #5F755D, #86F579);
+    height: 100vp;
+    background-image: url('../imagens/wallpaper.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 nav {
