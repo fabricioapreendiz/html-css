@@ -3,5 +3,5 @@
 
  Estou aprendendo a gerênciar repositórios!
 
-Eecutando um exercício pelo README.
+Executando um exercício pelo README.
 <a href="https://fabricioapreendiz.github.io/html-css/exercicios/desafio-2/">Executar o desafio-2</a>
