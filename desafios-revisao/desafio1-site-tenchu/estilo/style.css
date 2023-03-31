@@ -43,12 +43,16 @@
 
 h4 {
     text-decoration: none;
-    color: rgb(139, 104, 0);
+    color: white;
+    text-align: center;
+    margin: auto;
 }
 
 h4:hover {
     color: rgb(225, 196, 8);
     background-color: rgb(214, 88, 25);
+    max-width: 250px;
+
 }
 
 body {
@@ -83,9 +87,9 @@ header > p {
 }
 
 nav {
-    background-color: rgba(140, 19, 19, 0.576);
+    background-color: rgba(234, 22, 22, 0.576);
     padding: 8px;
-    max-width: 1000px;
+    max-width: 450px;
     margin: auto;
     border-radius: 7px;
     margin-bottom: 20px;
@@ -113,10 +117,12 @@ body > header > img {
 }
 
 nav > a {
+    margin: auto;
+    margin-right: 50px;
     color: rgba(4, 251, 78, 0.805);
     font-family: 'bBambooGrove';
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     transition-duration: .5s;
     border-radius: 10px;
 }
