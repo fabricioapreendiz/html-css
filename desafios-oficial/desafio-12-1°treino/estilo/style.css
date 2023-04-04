@@ -26,6 +26,7 @@ body {
 header a, footer a {
     color: rgb(77, 6, 6);
     text-decoration: none;
+    font-family: var(--fonte3);
 }
 
 header a:hover, footer a:hover {
@@ -37,11 +38,11 @@ header, h1 {
     font-variant: small-caps;
     font-family: 'PermanentMarker-Regular';
     font-size: 10vw;
-    padding: 20px;
+    padding: 10px;
 }
 
 header {
-    background-image: linear-gradient(to left, #033B3D, #0D4A3A, #2D5731, #526126, #7B6823);
+    background-image: linear-gradient(to left, #033b3d84, #0d4a3a87, #2d573198, #5261268d, #7b682393);
 }
 
 header > p {
@@ -65,12 +66,13 @@ section#img02 {
 }
 
 section.normal {
-    background-image: linear-gradient(to left, #033B3D, #0D4A3A, #2D5731, #526126, #7B6823);
+    background-image: linear-gradient(45deg , #033B3D, #0D4A3A, #2D5731, #526126, #7B6823);
     color: blanchedalmond;
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.306);
+    background-color: rgba(0, 0, 0, 0.409);
+    text-shadow: 3px 3px 0px black;
     width: 500px;
     padding: 10px;
     color: white;
@@ -80,10 +82,11 @@ section.imagem > p {
 section.imagem {
     background-color: rgb(113, 112, 112);
     background-attachment: fixed;
+    box-shadow: inset 10px 10px 16px 0px black;
 }
 
 section > p {
-    color: black;
+    color: white;
     padding-bottom: 1.5em;
     font-family: 'Parisienne', cursive;
 }
