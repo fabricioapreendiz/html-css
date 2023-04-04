@@ -72,6 +72,7 @@ section.normal {
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.409);
+    border-radius: 20px;
     text-shadow: 3px 3px 0px black;
     width: 500px;
     padding: 10px;
