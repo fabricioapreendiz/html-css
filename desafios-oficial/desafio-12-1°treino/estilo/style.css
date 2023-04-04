@@ -6,7 +6,9 @@
 }
 
 :root {
-    --fonte: 'Parisienne', cursive;
+    --fonte1:  Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Parisienne', cursive;
+    --fonte3: 'PermanentMarker-Regular';
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
@@ -38,9 +40,15 @@ header, h1 {
     padding: 20px;
 }
 
+header {
+    background-image: linear-gradient(to left, #033B3D, #0D4A3A, #2D5731, #526126, #7B6823);
+}
+
 header > p {
+    font-family: var(--fonte3);
     font-size: 20px;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 section#img01 {
@@ -65,16 +73,17 @@ section.imagem > p {
     background-color: rgba(0, 0, 0, 0.306);
     width: 500px;
     padding: 10px;
+    color: white;
 
 }
 
 section.imagem {
     background-color: rgb(113, 112, 112);
-    color: white;
     background-attachment: fixed;
 }
 
 section > p {
+    color: black;
     padding-bottom: 1.5em;
     font-family: 'Parisienne', cursive;
 }
@@ -84,7 +93,7 @@ section {
     padding-bottom: 10vh;
     padding-left: 35px;
     line-height: 2em;
-    font-size: 3vw;
+    font-size: 4vw;
 }
 
 footer {
