@@ -5,6 +5,22 @@
     padding: 0px;
 }
 
+:root {
+    --fonte1:Arial, Helvetica, sans-serif;
+    --fonte2:'BloodBlocks Project';
+    --fonte3:'Nightmare':
+}
+
+@font-face {
+    font-family: 'BloodBlocks Project';
+    src: url('../fonte/BloodBlocks\ Project.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nightmare';
+    src: url('../fonte/Nightmare\ 5.ttf')format('truetype');
+}
+
 html, body {
     background-image: linear-gradient(to bottom, darkred, black);
     background-attachment: fixed;
@@ -12,34 +28,74 @@ html, body {
 }
 
 header {
-    
-    background-image: linear-gradient(to top, rgb(255, 238, 0), red);
-    background-repeat: no-repeat;
-    height: 300px;
-}
-
-section.imagem {
-    background-image: url('../imagens/ecclipse.jpg');
-
+    border-radius: 20px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.823);
 }
 
 header > h1 {
-    color: white;
+    font-family: var(--fonte2);
+    font-weight: normal;
+    font-size: 4em;
+    color: rgb(127, 6, 6);
     text-align: center;
     padding: 50px;
     font-variant: small-caps;
 }
 
 header > p {
-    color: white;
+    color: rgb(130, 1, 1);
+    margin: auto;
     text-align: center;
-    padding-bottom: 50px;
-}
-
-main > h2 {
-    font-variant: small-caps;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.564);
+    width: 700px;
+    border-radius: 20px;
 }
 
 main {
+    background-color: rgba(14, 7, 7, 0.793);
+    margin-top: 30px;
+    margin: auto;
+    max-width: 1000px;
+}
 
+section#img01 {
+    background-image: url('../imagens/gutsprontidao.png');
+    background-position: center center;
+}
+
+main > section > article > h3 {
+   font-family: var(--fonte3);
+    color: white;
+    padding-left: 30px;
+
+}
+
+main > h2 {
+    font-family: var(--fonte2);
+    padding-top: 30px;
+    margin-bottom: 30px;
+    font-variant: small-caps;
+    text-align: center;
+    font-weight: normal;
+    font-size: 3.5em;
+    color: red;
+}
+
+main > section > article > p {
+    padding: 30px;
+    line-height: 2em;
+    color: white;
+    text-align: center;
+    text-align: justify;
+    text-indent: 30px;
+    margin-left: 20px;
+    
+}
+
+body > main > section {
+    padding-top: 20px;
+    max-width: 1000px;
 }
