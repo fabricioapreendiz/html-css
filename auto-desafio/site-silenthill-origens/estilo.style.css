@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(to left, darkred, black);
+}
+
+body {
+    background-color: rgb(110, 110, 110);
+}
