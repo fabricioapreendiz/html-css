@@ -29,16 +29,36 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
+body {
+    height: 100vh;
+    background-color: rgb(110, 110, 110);
+    background-image: url('../imagem/realityalternative.jpg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 header {
     background-image: linear-gradient(to left, rgba(139, 0, 0, 0.716), rgba(0, 0, 0, 0.612));
     border: 3px solid black;
     border-radius: 20px;
     padding-top: 0px 10px 10px 10px;
+    margin-bottom: 30px;
 }
 
-header > img {
+header img {
+    margin: auto;
+    display: block;
+}
+
+h1 {
+    font-family: var(--fonte3);
+    text-align: center;
     margin: auto;
 
+    background-color: rgba(220, 20, 60, 0.641);
+    border-radius: 5px;
 }
 
 header h1 {
@@ -51,7 +71,7 @@ header h1 {
 }
 
 header p {
-    text-align: justify;
+    text-align: center;
     text-indent: 30px;
     line-height: 2em;
     font-family: var(--fonte3);
@@ -64,8 +84,9 @@ header p {
 main {
     max-width: 1000px;
     min-width: 320px;
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.754), rgba(255, 255, 255, 0.738));
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.362), rgba(255, 255, 255, 0.35));
     margin: auto;
+    padding: 20px;
     box-shadow: 10px 0px 13px 7px black;
     border-radius: 15px;
 }
@@ -85,11 +106,6 @@ main p {
     text-align: justify;
     line-height: 2em;
     text-indent: 30px;
-}
-
-body {
-    height: 100vh;
-    background-color: rgb(110, 110, 110);
 }
 
 footer {
