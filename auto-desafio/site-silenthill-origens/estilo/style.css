@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+:root {
+    --cor1:rgba(113, 10, 10, 0.428);
+    --cor2:rgba(0, 0, 0, 0.463);
+    --cor3:white;
+    --cor4:black;
+
+    --fonte1:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --fonte2:'Nightmare';
+    --fonte3:'DK American Grunge';
+    --fonte4:''Lilita One', cursive';
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: 'Nightmare';
+    src: url('../fonte/Nightmare\ 5.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'DK American Grunge';
+    src: url('../fonte/DK\ American\ Grunge.ttf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+header {
+    background-image: linear-gradient(to left, rgba(139, 0, 0, 0.716), rgba(0, 0, 0, 0.612));
+    border: 3px solid black;
+    border-radius: 20px;
+    padding-top: 0px 10px 10px 10px;
+}
+
+header > img {
+    margin: auto;
+
+}
+
+header h1 {
+    background-color: black;
+    color: red;
+    text-align: center;
+    font-family: var(--fonte3);
+    font-size: 3em;
+    font-weight: lighter;
+}
+
+header p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-family: var(--fonte3);
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.52);
+    color: crimson;
+    border-radius: 10px;
+}
+
+main {
+    max-width: 1000px;
+    min-width: 320px;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.754), rgba(255, 255, 255, 0.738));
+    margin: auto;
+    box-shadow: 10px 0px 13px 7px black;
+    border-radius: 15px;
+}
+
+main h2 {
+    font-family: var(--fonte2);
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    font-size: 3em;
+    color: rgba(201, 127, 9, 0.817);
+}
+
+main p {
+    font-family: 'Lilita One', cursive;
+    background-color: rgba(128, 128, 128, 0.679);
+    padding: 20px;
+    text-align: justify;
+    line-height: 2em;
+    text-indent: 30px;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(110, 110, 110);
+}
+
+footer {
+    text-align: center;
+    background-image: linear-gradient(to left, rgba(139, 0, 0, 0.716), rgba(0, 0, 0, 0.612));
+    padding: 5px;
+    margin-top: 30px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+footer a {
+    color: rgb(42, 6, 120);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: paleturquoise;
+}
