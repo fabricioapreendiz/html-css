@@ -51,24 +51,20 @@ header {
 
 header img {
     padding-bottom: 20px;
-    max-width: 800px;
+    max-width: 500px;
     margin: auto;
     display: block;
 }
 
-h1 {
-    font-family: var(--fonte3);
-    text-align: center;
-    margin: auto;
-    margin-bottom: 30px;
-
-    background-color: rgba(220, 20, 60, 0.641);
-    border-radius: 5px;
+header img.pequena {
+    max-width: 350px;
 }
 
 header h1 {
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: black;
-    color: red;
+    color: rgb(245, 13, 13);
     text-align: center;
     font-family: var(--fonte3);
     font-size: 3em;
