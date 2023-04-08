@@ -49,6 +49,7 @@ header {
 }
 
 header img {
+    max-width: 350px;
     margin: auto;
     display: block;
 }
