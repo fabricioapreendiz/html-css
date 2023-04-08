@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 :root {
+    --cor0:background-image: linear-gradient(to left, rgba(139, 0, 0, 0.716), rgba(0, 0, 0, 0.612));
     --cor1:rgba(113, 10, 10, 0.428);
     --cor2:rgba(0, 0, 0, 0.463);
     --cor3:white;
@@ -85,6 +86,22 @@ header p {
     background-color: rgba(0, 0, 0, 0.861);
     color: crimson;
     border-radius: 10px;
+}
+
+div#video {
+    background-color: rgb(31, 2, 23);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 59%;
+}
+
+div#video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 }
 
 main {
