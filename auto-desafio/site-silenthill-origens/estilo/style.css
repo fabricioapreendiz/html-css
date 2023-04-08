@@ -35,7 +35,7 @@ body {
     background-color: rgb(110, 110, 110);
     background-image: url('../imagem/silent-hill-creepy-dark-nurses-n.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: right right;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -112,6 +112,11 @@ main {
     padding: 20px;
     box-shadow: 10px 0px 13px 7px black;
     border-radius: 15px;
+}
+
+main img {
+    margin: auto;
+    display: block;
 }
 
 main h2 {
