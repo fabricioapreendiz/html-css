@@ -46,15 +46,12 @@ header {
     border-radius: 20px;
     padding-top: 0px 10px 10px 10px;
     margin-bottom: 30px;
+    min-height: 150px;
 }
 
 header img {
-    max-width: 350px;
-    margin: auto;
-    display: block;
-}
-
-main img {
+    padding-bottom: 20px;
+    max-width: 800px;
     margin: auto;
     display: block;
 }
@@ -63,6 +60,7 @@ h1 {
     font-family: var(--fonte3);
     text-align: center;
     margin: auto;
+    margin-bottom: 30px;
 
     background-color: rgba(220, 20, 60, 0.641);
     border-radius: 5px;
@@ -78,15 +76,22 @@ header h1 {
 }
 
 header p {
-    text-align: justify;
-    
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1em;
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: 6px 9px 4px black;
+    max-width: 1100px;
+    margin: auto;
     text-indent: 30px;
     line-height: 2em;
     font-family: var(--fonte3);
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.861);
+    background-color: rgba(0, 0, 0, 0.719);
     color: crimson;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 div#video {
@@ -108,7 +113,7 @@ div#video > iframe {
 main {
     max-width: 1000px;
     min-width: 320px;
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.362), rgba(255, 255, 255, 0.35));
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.362), rgba(255, 255, 255, 0.291));
     margin: auto;
     padding: 20px;
     box-shadow: 10px 0px 13px 7px black;
