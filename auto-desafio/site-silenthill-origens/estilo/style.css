@@ -114,7 +114,7 @@ div#video > iframe {
 main {
     max-width: 1000px;
     min-width: 320px;
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.362), rgba(255, 255, 255, 0.291));
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.26rgba(255, 255, 255, 0.249)145));
     margin: auto;
     padding: 20px;
     box-shadow: 10px 0px 13px 7px black;
@@ -142,7 +142,7 @@ main h2 {
 
 main p {
     font-family: 'Lilita One', cursive;
-    background-color: rgba(128, 128, 128, 0.679);
+    background-color: rgba(128, 128, 128, 0.413);
     padding: 20px;
     text-align: justify;
     line-height: 2em;
