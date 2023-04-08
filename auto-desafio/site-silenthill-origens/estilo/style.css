@@ -32,9 +32,9 @@
 body {
     height: 100vh;
     background-color: rgb(110, 110, 110);
-    background-image: url('../imagem/realityalternative.jpg');
+    background-image: url('../imagem/silent-hill-creepy-dark-nurses-n.jpg');
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: center center;
     background-attachment: fixed;
     background-size: cover;
 }
@@ -48,6 +48,11 @@ header {
 }
 
 header img {
+    margin: auto;
+    display: block;
+}
+
+main img {
     margin: auto;
     display: block;
 }
@@ -71,12 +76,13 @@ header h1 {
 }
 
 header p {
-    text-align: center;
+    text-align: justify;
+    
     text-indent: 30px;
     line-height: 2em;
     font-family: var(--fonte3);
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.52);
+    background-color: rgba(0, 0, 0, 0.861);
     color: crimson;
     border-radius: 10px;
 }
