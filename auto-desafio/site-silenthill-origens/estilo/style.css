@@ -51,13 +51,15 @@ header {
 
 header img {
     padding-bottom: 20px;
-    max-width: 500px;
+    width: 100%;
     margin: auto;
     display: block;
 }
 
 header img.pequena {
-    max-width: 350px;
+    max-width: 600px;
+    margin: auto;
+    display: block;
 }
 
 header h1 {
@@ -69,6 +71,9 @@ header h1 {
     font-family: var(--fonte3);
     font-size: 3em;
     font-weight: lighter;
+    margin: auto;
+    max-width: 900px;
+    min-width: 320px;
 }
 
 header p {
@@ -121,12 +126,18 @@ main img {
     display: block;
 }
 
+main h1 {
+    background-color: rgba(255, 0, 0, 0.713);
+    text-align: center;
+}
+
 main h2 {
     font-family: var(--fonte2);
     text-align: center;
     text-shadow: 5px 5px 5px black;
     font-size: 3em;
     color: rgba(201, 127, 9, 0.817);
+    font-variant: small-caps;
 }
 
 main p {
