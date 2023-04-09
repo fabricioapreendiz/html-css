@@ -50,6 +50,7 @@ header {
 }
 
 header img {
+    padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
     margin: auto;
@@ -70,6 +71,7 @@ header h1 {
     text-align: center;
     font-family: var(--fonte3);
     font-size: 3em;
+    border-radius: 30px;
     font-weight: lighter;
     margin: auto;
     max-width: 900px;
