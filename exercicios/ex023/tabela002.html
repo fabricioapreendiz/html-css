@@ -11,8 +11,22 @@
            
         }
 
-        table, h1 {
-            width: 500px;
+        tbody > tr:nth-child(odd) {
+            background-image: linear-gradient(to right, green, blue);
+            font-weight: bolder;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: white;
+            font-weight: normal;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 400px;
             margin: auto;
             border-collapse: collapse;
             font-weight: normal;
@@ -20,9 +34,20 @@
             border-radius: 3px;
         }
 
+        caption {
+            background-image: linear-gradient(to right, green, blue);
+            width: 400px;
+            margin: auto;
+            border-collapse: collapse;
+            font-weight: normal;
+            border: 3px solid limegreen;
+            border-radius: 3px;
+            padding: 7px;
+        }
+
         thead, tfoot {
             background-color: rgba(35, 108, 255, 0.803);
-            color: red;
+            color: rgb(207, 17, 17);
         }
 
         td, th {
@@ -41,6 +66,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+          CAPTION
            THEAD
               tr, td, th
 
@@ -50,11 +76,11 @@
                tr, td, th        
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
 
@@ -196,7 +222,7 @@
 
             <tfoot>
                 <strong>
-                    <th>Total de habitantes</th>
+                    <th scope="row">Total de habitantes</th>
                 </strong>
                 <strong>
                     <td class="num">207 883 699</td>
