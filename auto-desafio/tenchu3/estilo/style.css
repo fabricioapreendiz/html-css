@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #AAADBF;
+    --cor2: #4B7DBF;
+    --cor3: #073359;
+    --cor4: #0C2840;
+    --cor5: #254559;
+
+    --font0: Arial, Helvetica, sans-serif;
+    --font1:'bBambooGrove';
+    --font2: 'ANTI-SOC';
+
+}
+
+@font-face {
+    font-family: 'bBambooGrove';
+    src: url('../fonte/bBambooGrove.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'ANTI-SOC';
+    src: url('../fonte/ANTI-SOC.TTF') format('truetype');
+}
+
+h4 {
+    font-family: var(--font2);
+}
+
+body {
+    height: 100vh;
+    background-color: var(--cor1);
+}
+
+header {
+    background-image: linear-gradient(to right, #254559, #4B7DBF);
+    
+}
+
+main {
+    max-width: 1000px;
+    min-width: 320px;
+}
+
+main h2 {
+    font-family: var(--font1);
+}
