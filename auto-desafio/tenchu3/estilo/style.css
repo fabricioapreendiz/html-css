@@ -30,6 +30,7 @@
 
 h4 {
     font-family: var(--font2);
+    text-align: center;
 }
 
 body {
@@ -37,16 +38,40 @@ body {
     background-color: var(--cor1);
 }
 
+header img {
+    margin: auto;
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+
 header {
     background-image: linear-gradient(to right, #254559, #4B7DBF);
-    
+    margin-bottom: 30px;
 }
 
 main {
+    border: 8px solid #0C2840;
+    padding: 20px;
+    border-radius: 20px;
     max-width: 1000px;
     min-width: 320px;
+    margin: auto;
+}
+
+main p {
+    text-align: justify;
+    text-indent: 32px;
+    line-height: 2em;
 }
 
 main h2 {
     font-family: var(--font1);
+}
+
+aside {
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
 }
