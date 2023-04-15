@@ -15,6 +15,7 @@
     --font0: Arial, Helvetica, sans-serif;
     --font1:'bBambooGrove';
     --font2: 'ANTI-SOC';
+    --font3: 'BloodBlocks';
 
 }
 
@@ -26,6 +27,11 @@
 @font-face {
     font-family: 'ANTI-SOC';
     src: url('../fonte/ANTI-SOC.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'BloodBlocks';
+    src: url('../fonte/BloodBlocks\ Project.ttf') format('truetype');
 }
 
 h4 {
@@ -53,11 +59,13 @@ header {
 
 main {
     border: 8px solid #0C2840;
+    background-color: #2545598c;
     padding: 20px;
     border-radius: 20px;
-    max-width: 1000px;
-    min-width: 320px;
+    max-width: 800px;
+    min-width: 320p;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 main p {
@@ -71,7 +79,51 @@ main h2 {
 }
 
 aside {
-    max-width: 1000px;
+    padding: 20px;
+    max-width: 600px;
     min-width: 320px;
     margin: auto;
+    line-height: 1.5em;
+    background-color: #254559;
+    border-radius: 20px;
+}
+
+aside h2 {
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor2));
+    border-radius: 22px;
+    padding: 20px;
+    
+    text-align: justify;
+    text-indent: 30px;
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px;
+}
+
+aside h3 {
+    padding-top: 10px;
+    font-family: var(--font3);
+    font-weight: normal;
+    color: darkred;
+    font-size: 2em;
+    text-align: center;
+}
+
+aside ul {
+    list-style-position: inside;
+    text-align: center;
+}
+
+aside li {
+    font-weight: bolder;
+}
+
+footer {
+    margin-top: 30px;
+    color: white;
+    background-color: black;
+}
+
+footer p {
+    text-align: center;
 }
