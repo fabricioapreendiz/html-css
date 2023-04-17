@@ -99,13 +99,17 @@ div.video > iframe {
     height: 90%;
 }
 
-
-
 main img {
     width: 100%;
     margin: auto;
     display: block;
     padding: 20px 0px;
+}
+
+img.pequena {
+    display: block;
+    margin: auto;
+    max-width: 50%;
 }
 
 main p {
@@ -168,7 +172,10 @@ aside ul {
 }
 
 aside li {
-    font-weight: bolder;
+    font-weight: normal;
+    font-size: 1em;
+    color: darkred;
+    font-family: var(--font1);
 }
 
 footer {
