@@ -119,7 +119,10 @@ main p {
 
 main h2 {
     font-family: var(--font1);
+    background-image: linear-gradient( to right, #073359, transparent) ;
     text-align: center;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 aside {
