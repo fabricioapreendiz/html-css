@@ -116,8 +116,7 @@ main p {
     text-align: justify;
     text-indent: 32px;
     line-height: 2em;
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-family: 'Jolly Lodger', cursive;
+    font-family: var(--font1);
     font-weight: bold;
 }
 
