@@ -46,7 +46,6 @@ h4 {
     color: white;
 }
 
-
 body {
     height: 100vh;
     background-color: var(--cor1);
@@ -64,7 +63,6 @@ header img {
     display: block;
     padding-bottom: 20px;
     padding-top: 20px;
-
 }
 
 header {
