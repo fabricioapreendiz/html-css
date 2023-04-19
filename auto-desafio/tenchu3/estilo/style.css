@@ -116,6 +116,8 @@ main p {
     line-height: 2em;
     font-family: var(--font1);
     font-weight: bold;
+    max-width: 800px;
+    margin: 15px 0px;
 }
 
 main h2 {
