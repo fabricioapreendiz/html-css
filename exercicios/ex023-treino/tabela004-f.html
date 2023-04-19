@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino com tabelas</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 2px solid black;
+        }
+
+        caption {
+            padding: 8px;
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Tabela com escopos</h1>
+    <table>
+        <caption>Tabela de preferências</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Seus Jogos preferidos</th>
+            </tr>
+        </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Garotos</th>
+                    <td>Carlos</td>
+                    <td>Resident4</td>
+                    <td>Silent Hill2</td>
+                    <td>Silent HILL Origens</td>
+                </tr>
+
+                <tr>
+                    <td>Túlio</td>
+                    <td>Urban Reign</td>
+                    <td>Dragon BAll Sparking</td>
+                    <td>Soul Calibur</td>
+                </tr>
+
+                <tr>
+                    <td>Luís</td>
+                    <td>Crazy Taxi</td>
+                    <td>Resident Code.V</td>
+                    <td>Alone in the Dark</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Garotas</th>
+                    <td>Sara</td>
+                    <td>Bomber man</td>
+                    <td>Super Mário</td>
+                    <td>Mário Kart</td>
+                </tr>
+
+                <tr>
+                    <td>Thaís</td>
+                    <td>Tenchu1</td>
+                    <td>Final Fantasy Tatics</td>
+                    <td>Gta San Andreas</td>
+                </tr>
+
+                <tr>
+                    <td>Lorena</td>
+                    <td>Medal of Honor</td>
+                    <td>Driver</td>
+                    <td>Final Fight</td>
+                </tr>
+            </tbody>
+        
+    </table>
+</body>
+</html>
