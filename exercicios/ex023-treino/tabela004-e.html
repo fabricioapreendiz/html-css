@@ -5,22 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela de preferência</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        table {
+           border-collapse: collapse;
+        }
+
+        caption {
+            padding: 8px;
+        }
+
+        th, td {
+            border: 2px solid darkgreen;
+            padding: 8px;
+        }
+
+    </style>
     
 </head>
 <body>
-    <caption>Jogos preferidos de cada pessoa</caption>
+    <h1>Pessoas e seus jogos</h1>
+    <table>
+        <caption>Jogos preferidos de cada pessoa</caption>
     <thead>
-        <h1>Pessoas e seus jogos</h1>
         <tr>
-            <th>Grupo</th>
-            <th>Nomes</th>
-            <th>Jogos</th>
+            <th scope="col">Grupo</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Jogos</th>
         </tr>
     </thead>
 
     <tbody>
         <tr>
-            <th>Homens</th>
+            <th rowspan="3" scope="rowgroup">Homens</th>
             <td>Davi</td>
             <td>Resident evil2</td>
             <td>Final Fantasy</td>
@@ -31,7 +50,6 @@
                 <td>Medal of Honor</td>
                 <td>Tenchu2</td>
                 <td>Tony Hawks2</td>
-                <td>GTA1</td>
             </tr>
 
             <tr>
@@ -41,13 +59,29 @@
                 <td>Metal Gear</td>
             </tr>
 
-            <th>Mulheres</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
+            <td>Jana</td>
+            <td>Dino Crisis2</td>
+            <td>Bomber Man</td>
+            <td>Mega Man</td>
+        </tr>
+
+        <tr>
+            <td>Aryelle</td>
+            <td>Jackie Cham</td>
+            <td>Alone in the Dark</td>
+            <td>Harry Potter</td>
+        </tr>
+
+        <tr>
+            <td>Ane</td>
+            <td>Silent Hill</td>
+            <td>XenoGear</td>
+            <td>SoulRiver</td>
         </tr>
     </tbody>
+
+    </table>
     
 </body>
 </html>
