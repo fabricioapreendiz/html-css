@@ -82,7 +82,7 @@ main {
 }
 
 div.video {
-    background-color: #073359;
+    background-color: #07335961;
     margin: 0px -20px 30px -20px;
     padding: 20px;
     position: relative;
@@ -117,7 +117,8 @@ main p {
     font-family: var(--font1);
     font-weight: bold;
     max-width: 800px;
-    margin: 15px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 main h2 {
@@ -134,7 +135,7 @@ aside {
     min-width: 320px;
     margin: auto;
     line-height: 1.5em;
-    background-color: #254559;
+    background-color: #254559d2;
     border-radius: 20px;
 }
 
