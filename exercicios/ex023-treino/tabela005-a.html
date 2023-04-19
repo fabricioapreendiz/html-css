@@ -5,8 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrupando colunas com colgroups</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+
+        th, td {
+         border: 3px solid darkslategray;  
+         padding: 8px; 
+        }
+
+        .destaque {
+            background-color: thistle;
+        }
+
+        .cnome {
+            background-color: yellow;
+
+        }
+
+        col.cgrupo {
+            background-color: teal;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <h1>Exercício com tabelas e escopos</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof.">
+        
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>43</td>
+                <td>Programador</td>
+            </tr>
+
+            <tr>
+                <td>Lúcio</td>
+                <td>M</td>
+                <td>76</td>
+                <td>Professor</td>
+            </tr>
+
+            <tr>
+                <td>Maura</td>
+                <td>F</td>
+                <td>97</td>
+                <td>Analista de Sistemas</td>
+            </tr>
+
+            <tr>
+                <td>Otávio</td>
+                <td>M</td>
+                <td>54</td>
+                <td>Nutricionista</td>
+            </tr>
+
+    </table>
 </body>
 </html>

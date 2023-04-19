@@ -123,6 +123,7 @@ main p {
 
 main h2 {
     font-family: var(--font1);
+    font-variant: small-caps;
     background-image: linear-gradient( to right, #073359, transparent) ;
     text-align: center;
     padding: 5px;
@@ -162,6 +163,7 @@ aside h3 {
     padding-top: 10px;
     font-family: var(--font3);
     font-weight: normal;
+    font-variant: small-caps;
     color: rgb(206, 8, 8);
     font-size: 2em;
     text-align: center;
