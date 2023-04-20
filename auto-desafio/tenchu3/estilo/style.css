@@ -12,12 +12,10 @@
     --cor4: #0C2840;
     --cor5: #254559;
 
-
     --font0: Arial, Helvetica, sans-serif;
     --font1:'bBambooGrove';
     --font2: 'ANTI-SOC';
     --font3: 'BloodBlocks';
-
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
@@ -68,6 +66,7 @@ header img {
 header {
     background-image: linear-gradient(to right, #254559, #4B7DBF);
     margin-bottom: 30px;
+    border-bottom: 10px solid black;
 }
 
 main {
