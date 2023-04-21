@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        table {
+          border-collapse: collapse;
+          width: 400px;
+        }
+
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+        }
+
+        caption {
+            padding: 6px;
+            font-weight: bolder;
+            font-size: 1.6em;
+        }
+
+        .destaque {
+            background-color: lightsalmon;
+        }
+
+        col.cnome {
+            background-color: green;
+        }
+
+        col.cgrupo {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercícios de tabelas</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgrupo" span="2">
+        
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>34</td>
+            <td>Programadora</td>
+        </tr>
+
+        <tr>
+            <td>Alice</td>
+            <td>F</td>
+            <td>33</td>
+            <td>Professora</td>
+        </tr>
+
+        <tr>
+            <td>Túlio</td>
+            <td>M</td>
+            <td>34</td>
+            <td>Musicista</td>
+        </tr>
+
+        <tr>
+            <td>Andrew</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Perito</td>
+        </tr>
+    </table>
+</body>
+</html>
