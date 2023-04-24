@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabela responsiva</title>
+    <title>Site de Teste</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 0, 255, 0.624);
+            color: white;
         }
 
         table {
@@ -28,16 +30,17 @@
             background-color: lightgreen;
         }
 
-        div#container {
+            tr:nth-child(odd) {
+                background-color: tomato;
+            }
+
+            div#container {
             overflow-x: auto;
         }
 
     </style>
-    
 </head>
 <body>
-    <h1>Tabela responsiva</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus eius dicta vitae. Vitae, sapiente laborum cupiditate qui cumque voluptatum ipsam rem nisi unde porro consectetur illo recusandae molestias modi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia explicabo, quibusdam, illum officiis, distinctio minima totam quos alias incidunt et inventore iste ad soluta. Velit reprehenderit libero cupiditate corrupti.</p>
     <div id="container">
         <table>
             <caption>Responsividade em tabelas</caption>
@@ -164,6 +167,7 @@
                 <td>16</td>
             </tr>
         </table>
+
     </div>
     
 </body>
