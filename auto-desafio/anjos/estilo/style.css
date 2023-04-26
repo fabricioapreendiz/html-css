@@ -1,0 +1,21 @@
+@charset "UTH-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: yellow;
+    --cor2:lightblue;
+}
+
+body {
+    background-image: linear-gradient(to top, yellow, lightblue);
+    background-attachment: fixed;
+}
+
+header {
+    background-image: linear-gradient(to top, rgb(224, 203, 64), rgb(255, 111, 0));
+    color: white;
+}
