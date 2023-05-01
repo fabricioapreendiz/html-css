@@ -7,7 +7,7 @@
     <title>Tabelas</title>
     <style>
         body {
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         table {
@@ -16,14 +16,15 @@
         }
 
         td {
-            border: 2px solid darkblue;
-            padding: 8px;
+            border: 3px solid black;
+            padding: 10px;
             text-align: center;
         }
+
     </style>
 </head>
 <body>
-    <h1>Mesclagem de células</h1>
+    <h1>Mesclagem de Células</h1>
     <table>
         <tr>
             <td>A</td>
@@ -34,20 +35,21 @@
         <tr>
             <td rowspan="3">D</td>
             <td>E</td>
-            <td>F</td>
+            <td rowspan="2">F</td>
         </tr>
 
         <tr>
-           
+            
             <td>H</td>
-            <td>I</td>
+            
         </tr>
 
         <tr>
-    
-            <td>L</td>
-            <td>M</td>
+        
+            
+            <td colspan="2">M</td>
         </tr>
+
     </table>
 </body>
 </html>
