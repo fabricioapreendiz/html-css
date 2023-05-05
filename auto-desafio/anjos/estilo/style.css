@@ -10,7 +10,8 @@
     --cor2:lightblue;
 }
 
-body {
+html, body {
+    min-height: 100vh;
     background-image: linear-gradient(to top, yellow, lightblue);
     background-attachment: fixed;
 }
@@ -18,4 +19,43 @@ body {
 header {
     background-image: linear-gradient(to top, rgb(224, 203, 64), rgb(255, 111, 0));
     color: white;
+    font-variant: small-caps;
+}
+
+header h1 {
+    font-size: 8vw;
+    text-align: center;
+}
+
+header h2 {
+    text-align: center;
+}
+
+header p {
+    text-align: center;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: grey;
+    color: white;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 2vw;
+}
+
+section p {
+    text-align: justify;
+    text-indent: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
