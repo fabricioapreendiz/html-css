@@ -45,7 +45,7 @@ header h2 {
 
 section#img01 {
     background-image: url('../imagens/img01.jpg');
-    background-position: center center;
+    background-position: top center;
     background-size: cover;
 }
 
@@ -61,18 +61,24 @@ section#img03 {
     background-size: cover;
 }
 
+section#img04 {
+    background-image: url('../imagens/img04.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
 header p {
     text-align: center;
     padding-bottom: 30px;
 }
 
 section.normal {
-    background-color: rgb(248, 199, 83);
+    background-color: rgba(248, 199, 83, 0.373);
     color: black;
 }
 
 section.imagem p {
-    background-color: rgba(0, 0, 0, 0.315);
+    background-color: rgba(0, 0, 0, 0.149);
     padding: 10px;
     border-radius: 10px;
 }
