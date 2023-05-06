@@ -5,9 +5,19 @@
     padding: 0px;
 }
 
+@font-face {
+    font-family: 'SiempreGótica';
+    src: url('../fonte/Por\ Siempre\ Gótica.ttf')format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
 :root {
     --cor1: yellow;
     --cor2:lightblue;
+
+    --fonte1: 'SiempreGótica';
+    --fonte2: 'Leckerli One', cursive;
 }
 
 html, body {
@@ -25,14 +35,35 @@ header {
 header h1 {
     font-size: 8vw;
     text-align: center;
+    font-family: var(--fonte1);
+    font-weight: normal;
 }
 
 header h2 {
     text-align: center;
 }
 
+section#img01 {
+    background-image: url('../imagens/img01.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/img02.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+section#img03 {
+    background-image: url('../imagens/img03.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
 header p {
     text-align: center;
+    padding-bottom: 30px;
 }
 
 section.normal {
@@ -54,8 +85,41 @@ section {
     font-size: 2vw;
 }
 
+section h3 {
+    font-family: var(--fonte1);
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
 section p {
     text-align: justify;
     text-indent: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Leckerli One', cursive;
+    line-height: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(112, 10, 10);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: rgb(255, 83, 83);
+}
+
+footer a:active {
+    color: snow;
 }
