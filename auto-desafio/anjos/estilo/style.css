@@ -13,7 +13,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 
 :root {
-    --cor1: yellow;
+    --cor1: rgba(255, 255, 0, 0.68);
     --cor2:lightblue;
 
     --fonte1: 'SiempreGótica';
@@ -22,12 +22,12 @@
 
 html, body {
     min-height: 100vh;
-    background-image: linear-gradient(to top, yellow, lightblue);
+    background-image: linear-gradient(to top, rgba(255, 255, 0, 0.599), lightblue);
     background-attachment: fixed;
 }
 
 header {
-    background-image: linear-gradient(to top, rgb(224, 203, 64), rgb(255, 111, 0));
+   
     color: white;
     font-variant: small-caps;
 }
@@ -43,33 +43,34 @@ header h2 {
     text-align: center;
 }
 
+header p {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
 section#img01 {
     background-image: url('../imagens/img01.jpg');
     background-position: top center;
-    background-size: cover;
 }
 
 section#img02 {
     background-image: url('../imagens/img02.jpg');
     background-position: center center;
-    background-size: cover;
 }
 
 section#img03 {
     background-image: url('../imagens/img03.jpg');
     background-position: center center;
-    background-size: cover;
 }
 
 section#img04 {
     background-image: url('../imagens/img04.jpg');
     background-position: center center;
-    background-size: cover;
 }
 
-header p {
-    text-align: center;
-    padding-bottom: 30px;
+section#img05 {
+    background-image: url('../imagens/img05.jpg');
+    background-position: center center;
 }
 
 section.normal {
@@ -81,14 +82,19 @@ section.imagem p {
     background-color: rgba(0, 0, 0, 0.149);
     padding: 10px;
     border-radius: 10px;
+    text-align: center;
+    margin: auto;
 }
 
 section.imagem {
-    background-color: grey;
+    background-color: rgb(56, 54, 54);
     color: white;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section {
+    background-image: linear-gradient(to top, rgb(224, 203, 64), rgb(255, 111, 0));
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 1.5em;
@@ -96,14 +102,17 @@ section {
     padding-right: 30px;
     font-size: 2vw;
 }
+
 h3 {
     margin-bottom: 30px;
 }
+
 section h3 {
+    padding: 5px;
     margin-bottom: 30px;
     font-family: var(--fonte1);
     background-color: rgba(0, 0, 0, 0.316);
-    width: 300px;
+    width: 200px;
     border-radius: 10px;
     font-weight: bold;
     font-size: 2em;
@@ -117,6 +126,15 @@ section p {
     font-family: 'Leckerli One', cursive;
     line-height: 1.5em;
     padding-bottom: 1.5em;
+    width: 800px;
+    margin: auto;
+
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.516);
+    padding: 5px;
+    width: 800px;
 }
 
 footer {
