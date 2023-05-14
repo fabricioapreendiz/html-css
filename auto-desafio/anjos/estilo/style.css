@@ -110,8 +110,12 @@ section {
     font-size: 2vw;
 }
 
-h3 {
+main > section > h3 {
     margin-bottom: 30px;
+    text-align: center;
+    max-width: 500px;
+    background-color: rgba(224, 17, 17, 0.545);
+    
 }
 
 section h3 {
