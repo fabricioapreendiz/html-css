@@ -15,6 +15,7 @@
 :root {
     --cor1: rgba(255, 255, 0, 0.68);
     --cor2:lightblue;
+
     --fonte1: 'SiempreGótica';
     --fonte2: 'Leckerli One', cursive;
 }
@@ -73,6 +74,7 @@ header p {
 
 section.imagem  p {
     line-height: 1.5em;
+    font-size: 1.3em;
     max-width: 800px;
     background-color: rgba(0, 0, 0, 0.382);
     padding: 2px;
@@ -88,7 +90,8 @@ section p {
     text-align: justify;
     text-shadow: 3px 1px 4px black;
     text-indent: 35px;
-    font-family: 'Leckerli One', cursive;
+    font-size: 1.3em;
+    font-family: '--fonte2';
     line-height: 1.5em;
     padding-bottom: 1.5em;
     padding: 10px;
