@@ -49,6 +49,12 @@ header p {
     padding-bottom: 30px;
 }
 
+main {
+    border: 1px solid black;
+    max-width: 900px;
+    margin: auto;
+}
+
 section#img01 {
     background-image: url('../imagens/img01.jpg');
     background-position: top center;
@@ -129,12 +135,11 @@ section p {
     padding-bottom: 1.5em;
     width: 800px;
     margin: auto;
-
 }
 
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.516);
-    padding: 5px;
+    padding: 10px;
     width: 800px;
 }
 
