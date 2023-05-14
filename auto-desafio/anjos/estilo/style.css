@@ -49,7 +49,7 @@ header p {
 
  section#img01 {
     background-image: url('../imagens/img01.jpg');
-    background-position: top center;
+    background-position: center right;
 }
  section#img02 {
     background-image: url('../imagens/img02.jpg');
