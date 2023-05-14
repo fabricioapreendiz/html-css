@@ -65,7 +65,7 @@ header p {
 }
  section#img05 {
     background-image: url('../imagens/img05.jpg');
-    background-position: center center;
+    background-position: top top;
 }
  section.normal {
     background-color: rgba(248, 199, 83, 0.209);
