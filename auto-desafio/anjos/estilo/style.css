@@ -29,22 +29,21 @@ header {
     color: white;
     font-variant: small-caps;
     background-color: black;
+    text-align: center;
 }
 
-header h1 {
+header h1, h2 {
     font-size: 8vw;
     text-align: center;
     font-family: var(--fonte1);
     font-weight: normal;
-}
-
-header h2 {
-    text-align: center;
+    max-width: 800px;
+    margin: auto;
 }
 
 header p {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
  section#img01 {
@@ -68,19 +67,36 @@ header p {
     background-position: center center;
 }
  section.normal {
-    background-color: rgba(248, 199, 83, 0.373);
+    background-color: rgba(248, 199, 83, 0.209);
     color: black;
 }
- section.imagem  p {
+
+section.imagem  p {
+    line-height: 1.5em;
     max-width: 800px;
-    background-color: rgba(0, 0, 0, 0.149);
-    padding: 7px;
-    text-shadow: 4px 4px 0px black;
+    background-color: rgba(0, 0, 0, 0.382);
+    padding: 2px;
+    text-shadow: 3px 2px 1px black;
     border-radius: 10px;
+    text-indent: 30px;
     text-align: center;
     margin: auto;
 }
- section.imagem {
+
+section p {
+    color: azure;
+    text-align: justify;
+    text-shadow: 3px 1px 4px black;
+    text-indent: 35px;
+    font-family: 'Leckerli One', cursive;
+    line-height: 1.5em;
+    padding-bottom: 1.5em;
+    padding: 10px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section.imagem {
     background-color: rgb(56, 54, 54);
     color: white;
     background-size: cover;
@@ -92,40 +108,21 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 1.5em;
-    padding-left: 30px;
-    padding-right: 30px;
     font-size: 2vw;
 }
 
- section h3 {
+section h3 {
+    color: aliceblue;
     padding: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-shadow: 1px 1px 3px black;
     font-family: var(--fonte1);
-    background-color: rgba(0, 0, 0, 0.316);
-    width: 200px;
-    border-radius: 10px;
+    max-width: 200px;
+    border-radius: 5px;
     font-weight: bold;
     font-size: 2em;
     text-align: center;
     margin: auto;
-}
- section p {
-    text-align: justify;
-    text-shadow: 1px 1px 3px black;
-    text-indent: 30px;
-    font-family: 'Leckerli One', cursive;
-    line-height: 1.5em;
-    padding-bottom: 1.5em;
-    max-width: 800px;
-    margin: auto;
-}
- section.imagem > p {
-    line-height: 1.5em;
-    text-indent: 30px;
-    background-color: rgba(0, 0, 0, 0.516);
-    padding: 10px;
-    max-width: 800px;
 }
 
 footer {
