@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: darkcyan;
+            font-weight: bold;
+        }
+
+        div {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <div>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>---Escolha seu estado---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="Sp">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Norte">
+                    <option value="PE">Pernambuco</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="RR">Roraima</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="iprofi">Profissão:</label>
+            <input type="text" name="profi" id="iprofi" list="lista de profissões">
+            <datalist id="lista de profissões">
+                <option >Administrador</option>
+                <option >Desenvolvedor</option>
+                <option >Contabilista</option>
+                <option >Professor</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem aqui!">Sua mensagem aqui, carai!</textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+</body>
+</html>
