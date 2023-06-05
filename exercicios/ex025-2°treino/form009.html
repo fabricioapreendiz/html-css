@@ -7,28 +7,36 @@
     <title>Formulário</title>
     <style>
         body {
-            background-color: beige;
+            background-color: lightslategrey;
         }
+
         div {
-            padding: 8px;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="get">
+
+    
+            <div>
+                <label for="inum">Número:</label>
+                <input type="range" name="num" id="inum" min="0" max="10" value="0" oninput="ival.innerHTML = Number(inum.value)">
+                <output id="ival">0</output>
+            </div>
+        
+
+
+
 
         <div>
-            <label for="inum">Número:</label>
-            <input type="range" name="num" id="inum" min="0" max="10" value="0" oninput="ival.innerHTML = Number(inum.value)">
-            <output id="ival">10</output>
-
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </div>
 
-        <div>
-
-        </div>
 
     </form>
+    
 </body>
 </html>
