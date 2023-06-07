@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body {
+            background-color: lightgrey;
+        }
+        div {
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <div>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="8" maxlength="20" placeholder="Nome de usuário" autocomplete="username">
+        </div>
+
+        <div>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" size="6" placeholder="********" autocomplete="current-password">
+        </div>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
 </body>
 </html>
