@@ -21,8 +21,8 @@
     <form action="cadastro.php" method="get">
         <fieldset>
             <legend>Gênero</legend>
-            <input type="radio" name="genero" id="igenmas"> <label for="igenmas">Masculino</label>
-            <input type="radio" name="genero" id="igenfem"> <label for="igenfem">Feminino</label>
+            <input type="radio" name="genero" id="igenmas" value="M"> <label for="igenmas">Masculino</label>
+            <input type="radio" name="genero" id="igenfem" value="F"> <label for="igenfem">Feminino</label>
         </fieldset>
         <fieldset>
             <legend>Esportes favoritos</legend>
@@ -32,11 +32,13 @@
             <input type="checkbox" name="esbox" id="iesbox"> <label for="iesbox">Boxe</label>
         </fieldset>
 
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
     </form>
 
-    <div>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </div>
+    
 </body>
 </html>
