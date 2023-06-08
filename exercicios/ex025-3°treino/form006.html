@@ -12,6 +12,7 @@
 
         body {
             background-color: lightgray;
+            font-weight: bold;
         }
 
         div {
@@ -21,11 +22,22 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <div>
             <label for="icor">Cor:</label>
-            <input type="color" name="cor" id="icor">
+            <input type="color" name="cor" id="icor" value="">
         </div>
+
+        <div>
+            <label for="inivel">Nível de Satisfação:</label>
+            <input type="range" name="nivel" id="inivel" value="0" min="0" max="10">
+        </div>
+
+        <div>
+            <label for="ifoto">Foto de perfil:</label>
+            <input type="file" name="foto" id="ifoto">
+        </div>
+
         <div>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
