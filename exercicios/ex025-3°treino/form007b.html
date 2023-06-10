@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <style>
+        body {
+            background-color: rgba(108, 10, 10, 0.647);
+            font-weight: bolder;
+            font-size: 1em;
+        }
+
+        div {
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <div>
+            <label for="iband">Bandas:</label>
+            <select name="bandas" id="iband">
+
+                <option value="">---Escolha sua banda favorita:</option>
+                <optgroup label="Nu-Metal">
+                    <option value="SL">Slipknot</option>
+                    <option value="KO">Korn</option>
+                    <option value="DE">Deftones</option>
+                </optgroup>
+
+                <optgroup label="Grunge">
+                    <option value="SG">SoundGarden</option>
+                    <option value="NI">Nirvana</option>
+                    <option value="AL">Alice in Chains</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <label for="iinst">Instrumentista:</label>
+            <input type="text" name="Inst" id="iinst" list="lstinst">
+            <datalist id="lstinst">
+                <option value="VOCAL">Vocalista</option>
+                <option value="BASS">Baixista</option>
+                <option value="DRUMS">Baterista</option>
+                <option value="GUITAR">Guitarrista</option>
+            </datalist>
+        </div>
+
+        <div>
+            <label for="imsg">Diga suas qualidades como instrumentista:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea> <br>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
     
 </body>
 </html>
