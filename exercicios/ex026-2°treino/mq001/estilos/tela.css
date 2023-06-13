@@ -22,6 +22,7 @@ header h1 {
 menu ul {
     list-style-type: none;
     background-color: rgba(136, 134, 134, 0.728);
+    text-align: center;
 }
 
 menu li {
