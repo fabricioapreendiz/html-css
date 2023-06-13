@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*Estilo para tela*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgba(128, 214, 217, 0.769);
+}
+
+header h1 {
+    text-align: center;
+    background-color: rgba(253, 130, 130, 0.63);
+}
+
+menu li {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(127, 255, 212, 0.465);
+    border-radius: 8px;
+    color: blueviolet;
+}
+
+menu ul {
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.419);
+    text-align: center;
+}
+
+article {
+    width: 600px;
+    display: block;
+    margin: auto;
+}
+
+article p {
+    text-align: justify;
+    text-indent: 33px;
+}
