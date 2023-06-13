@@ -8,7 +8,7 @@
 
 html {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
+    font-size: 1.5em;
     line-height: 1.5em;
 }
 
@@ -16,15 +16,10 @@ menu {
     display: none;
 }
 
+article::after {
+    content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
+}
+
 article {
     width: 100%;
-}
-
-article p {
-    text-align: justify;
-    text-indent: 33px;
-}
-
-article::after {
-    content: 'Artigo impresso através do site cursoemvideo.com';
 }
