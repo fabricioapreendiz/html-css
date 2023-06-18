@@ -1,23 +1,4 @@
-@charset "UTF-8";
+
 /*Configurações gerais*/
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
 
-html, body {
-    width: 100vw;
-    height: 100vh;
-    background-color: #233eff;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-h1 {
-    text-align: center;
-    font-size: 1em;
-    color: white;
-    text-shadow: 3px 3px 1px #15259d;
-    padding: 10px;
-}
