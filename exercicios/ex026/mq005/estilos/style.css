@@ -37,6 +37,7 @@ header > h1 {
 
 menu {
     display: none;
+    text-align: center;
 }
 
 menu > ul {
@@ -48,9 +49,12 @@ menu > ul > li > a {
     padding: 10px;text-decoration: none;
     background-color: rgba(255, 0, 0, 0.269);
     color: black;
+    border-radius: 8px;
+    width: 100px;
     font-weight: bold;
     text-align: center;
     border-top: 2px solid black;
+    margin: 5px;
 }
 
 menu > ul > li > a:hover {
@@ -80,5 +84,4 @@ article > p {
     line-height: 1.3em;
     color: rgb(114, 27, 27);
     margin-bottom: 23px;
-
 }
