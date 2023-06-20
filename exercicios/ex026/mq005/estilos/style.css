@@ -1,6 +1,70 @@
 @charset "UTF-8";
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+
 body, html {
     background-color: black;
-    color: white;
+}
+
+header {
+    background-color: gray;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+    color: darkred;
+}
+
+menu {
+    display: block;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;text-decoration: none;
+    background-color: rgba(255, 0, 0, 0.269);
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+menu > ul > li > a:hover {
+    background-color: tomato;
+}
+
+menu > ul > li > a:active {
+    background-color: rgb(248, 192, 192);
+}
+
+main {
+    background-color: rgb(148, 148, 148);
+    width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+article > h2 {
+    padding-bottom: 15px;
+}
+
+article > p {
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.3em;
+    color: rgb(114, 27, 27);
+    margin-bottom: 23px;
+
 }
