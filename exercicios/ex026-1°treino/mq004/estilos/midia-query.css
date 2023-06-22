@@ -1,6 +1,80 @@
 @charset "UTF-8";
 /*Todas as midias*/
 
+/*Typical Device Breackpoints do Curso em video
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 766px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+
+Typical Device Breackpoints atualizado 
+Mobile: 360 x 640.
+Mobile: 375 x 667.
+Mobile: 360 x 720.
+iPhone X: 375 x 812.
+Pixel 2: 411 x 731.
+Tablet: 768 x 1024.
+Laptop: 1366 x 768.
+High-res laptop or desktop: 1920 x 1080.
+
+*/
+
 @media print {
-    
+    body {
+        background-image: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main h1 {
+        font-weight: normal;
+        text-shadow: none;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        border: 3px solid black;
+    }
+
+    main::after {
+        content: 'Impressão feita pelo www.cursoemvideo.com';
+    }
+
+    img#phone {display: none; }
+    img#tablet {display: none; }
+    img#print {display: block; }
+    img#pc {display: none; }
+    img#tv {display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone {display: none; }
+    img#tablet {display: block; }
+    img#print {display: none; }
+    img#pc {display: none; }
+    img#tv {display: none; }
+}
+
+@media  screen and (min-width: 1366px) and (max-width: 1500px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone {display: none; }
+    img#tablet {display: none; }
+    img#print {display: none; }
+    img#pc {display: block; }
+    img#tv {display: none; }
+}
+
+@media  screen and (min-width: 1500px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone {display: none; }
+    img#tablet {display: none; }
+    img#print {display: none; }
+    img#pc {display: none; }
+    img#tv {display: block; }
 }
