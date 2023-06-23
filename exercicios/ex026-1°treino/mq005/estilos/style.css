@@ -29,6 +29,7 @@ header > p {
     display: block;
     text-align: center;
     padding: 3px;
+    margin-bottom: 10px;
 }
 
 #burguer:hover {
@@ -51,8 +52,9 @@ menu > ul > li > a {
     padding: 5px;
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.5);
-    color: darkred;
+    color: whitesmoke;
     border-top: 2px solid black;
+    border-radius: 5px;
 }
 
 menu > ul > li a:hover {
@@ -70,10 +72,8 @@ main {
 
 article > h2 {
     text-align: center;
-    border: 3px solid black;
     margin: 10px;
     width: 300px;
-    background-color: #ff000083;
 }
 
 article > p {
