@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     
 </head>
@@ -12,9 +12,10 @@
     <header>
         <h1>Playstation 1</h1>
         <p>Pura nostalgia...</p>
+        <span id="burguer" class="material-icons md-48" onclick="clickMenu()">menu</span>
         
 
-        <menu>
+        <menu id="jogos">
             <ul>
                 <li><a href="#">Silent hill, Origens</a></li>
                 <li><a href="#">A História de Tenchu</a></li>
@@ -37,5 +38,15 @@
 
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+           if (jogos.style.display == 'block') {
+            jogos.style.display = 'none'
+           } else {
+            jogos.style.display = 'block'
+           } 
+        }
+    </script>
 </body>
 </html>
